@@ -1,0 +1,20 @@
+ @import "./breakpoints.scss";
+ @import "./variables.scss";
+ 
+  /* FOR ALL COMPONENTS */
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ 
+  /* SETUP WEBSITE BACKGROUND COLOR */
+ body,
+ html {
+   background: var(--body-color);
+   user-select: none;
+   overscroll-behavior: none;
+   font-family: var(--font-primary);
+   color: var(--black-color);
+ }
+ 
