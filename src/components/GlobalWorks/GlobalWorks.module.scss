@@ -1,0 +1,102 @@
+.works{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #E5E5E5;
+    position: relative;
+
+    &__text{
+        padding: 6rem 10rem 0 10rem;
+        h1{
+            text-align: center;
+            span{
+                color: #175FFF;
+            }
+        }
+        p{
+            width: 50%;
+            margin: auto;
+            text-align: center;
+        }
+    }
+
+    .slider{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        .allworks{
+            margin-top: 4rem;
+            padding: 0 10rem;
+            .work{
+                min-height: 50vh;
+                border-radius: 8px;
+                background: 0 0 10px rgba(0, 0, 0, 0.08);
+                padding: 2rem;
+                &__container{
+                    background: #fff;
+                    min-height: 50vh;
+                    border-radius: 8px;
+                    img{
+                        width: 100%;
+                    }
+                    .content{
+                        padding: 2rem;
+                        h4{
+                            font-size: 1.5rem;
+                            font-weight: normal;
+                        }
+                        p{
+                            display: block;
+                            font-size: 15px;
+                            font-weight: lighter;
+                            margin-bottom: 1rem;
+                            margin-top: 1rem;
+                        }
+                        a{
+                            text-decoration: none;
+                            color: var(--primary-color);
+                        }
+                    }
+                }
+            }
+        }
+        .sliderArrow1,
+        .sliderArrow2{
+            position: absolute;
+            top: 50%;
+            font-size: 3rem;
+            color: var(--primary-color);
+            cursor: pointer;
+        }
+        .sliderArrow1{
+            left: 5rem;
+        }
+        .sliderArrow2{
+            right: 5rem;
+        }
+    }
+
+    a.global{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        color: var(--primary-color);
+        font-size: 1rem;
+        span{
+            margin-left: 8px;
+            font-size: 1.2rem;
+            svg{
+                margin-top: 8px;
+            }
+        }
+    }
+}
+
+.absimage{
+    position: absolute;
+    right: 0;
+    top: 0;
+}

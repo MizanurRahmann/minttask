@@ -40,7 +40,7 @@
           box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
           border-radius: 8px;
           padding: 4rem 2rem;
-  
+
           img {
             width: 3rem;
             margin-bottom: 1.5rem;
@@ -79,5 +79,17 @@
         }
       }
     }
+  }
+  .img1,
+  .img2 {
+    position: absolute;
+  }
+  .img1 {
+    top: -2rem;
+    left: 3rem;
+  }
+  .img2 {
+    right: 4rem;
+    bottom: -2rem;
   }
 }

@@ -1,0 +1,92 @@
+.feedback {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #e5e5e5;
+  position: relative;
+
+  &__text {
+    padding-top: 10rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    p {
+      width: 50%;
+      margin: auto;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+  }
+
+  .slider {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    .allFeedBacks {
+      margin-top: 4rem;
+      padding: 0 10rem;
+      align-items: center !important;
+      .feedback {
+        min-height: fit-content;
+        border-radius: 8px;
+        background: 0 0 10px rgba(0, 0, 0, 0.08);
+        padding: 2rem;
+        &__container {
+          background: #fff;
+          min-height: fit-content;
+          border-radius: 8px;
+          padding: 1.5rem;
+          .logo {
+            color: gray;
+            font-size: 2rem;
+          }
+          .text {
+            font-size: 1rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+          }
+          .user {
+            display: flex;
+            align-items: center;
+            &__image {
+              width: 40px;
+              height: 40px;
+              margin-right: 1rem;
+              img {
+                width: 100%;
+              }
+            }
+            &__name {
+              font-size: 1rem;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+
+    .sliderArrow1,
+    .sliderArrow2 {
+      position: absolute;
+      top: 50%;
+      font-size: 3rem;
+      color: var(--primary-color);
+      cursor: pointer;
+    }
+    .sliderArrow1 {
+      left: 5rem;
+    }
+    .sliderArrow2 {
+      right: 5rem;
+    }
+  }
+}
+
+.absimage {
+  width: 12rem;
+  position: absolute;
+  top: -7rem;
+  left: -3.5rem;
+}

@@ -1,0 +1,72 @@
+.gcontact {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+
+  &__left {
+    width: 55%;
+    background: #175fff;
+    padding: 6rem 5rem 5rem 10rem;
+    h1,
+    p {
+      color: #fff;
+    }
+    h1{
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+        font-family: var(--font-primary);
+    }
+    p{
+        font-size: 1rem;
+        font-family: var(--font-primary);
+    }
+    form {
+      width: 100%;
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      .inputGroup {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        input {
+          width: 49%;
+          padding: 20px 30px;
+          font-size: 1rem;
+          background: var(--white-color);
+          outline: none;
+          border: none;
+          font-family: var(--font-primary);
+        }
+      }
+      textarea {
+        width: 100%;
+        padding: 15px 30px;
+        font-size: 1rem;
+        background: var(--white-color);
+        outline: none;
+        border: none;
+        font-family: var(--font-primary);
+      }
+      button {
+        outline: none;
+        border: none;
+        padding: 15px 5rem;
+        font-size: 1rem;
+        border: 1px solid var(--primary-color);
+        color: var(--primary-color);
+        background: #e7f1fe;
+        width: fit-content;
+        margin-top: 1rem;
+        font-family: var(--font-primary);
+        cursor: pointer;
+      }
+    }
+  }
+  &__right {
+    width: 45%;
+    background: url(../../assets/Global/Contact/back.png) no-repeat center
+      center / cover;
+  }
+}
