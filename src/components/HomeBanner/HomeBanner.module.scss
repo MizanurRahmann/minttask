@@ -1,0 +1,90 @@
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background: url(../../assets/Home/unsplash_1lfI7wkGWZ4.png) no-repeat center
+    center / cover;
+  position: relative;
+
+  &__text {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    h1 {
+      text-align: center;
+      color: #ffff;
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
+    p {
+      text-align: center;
+      color: #ffff;
+      font-size: 1.6rem;
+    }
+
+    .btnGroup {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+
+      button {
+        padding: 1rem 2rem;
+        border: none;
+        outline: none;
+        margin-right: 2rem;
+        &:nth-child(1) {
+          background-color: #175fff;
+          color: #fff;
+        }
+        &:nth-child(2) {
+          background-color: #e7f1fe;
+          color: #175fff;
+          border: 1px solid #175fff;
+        }
+      }
+    }
+  }
+
+  &__option {
+    width: 100%;
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .block {
+      height: 10.5rem;
+      width: 10.5rem;
+      padding: 2rem;
+      img {
+        width: 1.5rem;
+      }
+      h4 {
+        font-size: 1rem;
+        margin-top: 1rem;
+      }
+    }
+    .block.first {
+      background: #175fff;
+      color: #fff;
+    }
+    .block.second {
+      background: #0b2845;
+      color: #fff;
+    }
+    .logo {
+      height: 5rem;
+      width: 5rem;
+      margin-right: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .text {
+      width: 10%;
+      margin-right: 4rem;
+      color: #fff;
+    }
+  }
+}
