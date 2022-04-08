@@ -1,0 +1,57 @@
+.banner {
+  width: 100%;
+  min-height: 80vh;
+  background: #165fff;
+  display: flex;
+
+  &__left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding-left: 180px;
+    p {
+      font-size: 1.4rem;
+      font-family: var(--font-primary);
+    }
+    h1 {
+      font-size: 3rem;
+      font-family: var(--font-primary);
+    }
+    a {
+      display: inline-block;
+      text-decoration: none;
+      padding: 15px 32px;
+      color: var(--primary-color);
+      background: var(--primary-color-light);
+      margin-top: 2rem;
+    }
+  }
+
+  &__right{
+    width: 50%;
+    position: relative;
+    .frame{
+      position: absolute;
+      top: 50%;
+      left: 12rem;
+      transform: translateY(-50%);
+    }
+    .iphone1{
+      position: absolute;
+      bottom: 0;
+      right: 2rem;
+      width: 55%;
+    }
+    .iphone2{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    .iphone3{
+      position: absolute;
+      top: 2rem;
+      right: 0;
+    }
+  }
+}

@@ -16,7 +16,7 @@ function Home() {
       <HomeService />
       <HomeIndustries />
       <HomeClients />
-      <GlobalWorks />
+      <GlobalWorks background={`#E5E5E5`} />
       <HomeAchievements />
       <HomeFeedback />
       <GlobalContact />

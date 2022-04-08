@@ -1,7 +1,6 @@
 .feedback {
   width: 100%;
   min-height: 100vh;
-  background-color: #e5e5e5;
   position: relative;
 
   &__text {
@@ -31,13 +30,14 @@
       .feedback {
         min-height: fit-content;
         border-radius: 8px;
-        background: 0 0 10px rgba(0, 0, 0, 0.08);
+        
         padding: 2rem;
         &__container {
           background: #fff;
           min-height: fit-content;
           border-radius: 8px;
           padding: 1.5rem;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
           .logo {
             color: gray;
             font-size: 2rem;
