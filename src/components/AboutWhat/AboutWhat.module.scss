@@ -2,6 +2,7 @@
   width: 100%;
   min-height: 100vh;
   padding: 6rem 10rem;
+  position: relative;
 
   &__identity {
     width: 100%;
@@ -145,5 +146,20 @@
         font-size: 2rem;
       }
     }
+  }
+
+  .img1,
+  .img2{
+    position: absolute;
+  }
+  .img1{
+    top: -8rem;
+    left: 0;
+    height: 16rem;
+  }
+  .img2{
+    bottom: 10rem;
+    right: 0;
+    height: 10rem;
   }
 }

@@ -1,7 +1,10 @@
 import style from "./AboutWhat.module.scss";
 import { AiOutlineCheck } from "react-icons/ai";
-import img1 from "../../assets/About/discussion.png";
 import { BsCart } from "react-icons/bs";
+// Images
+import img1 from "../../assets/About/discussion.png";
+import s1 from "../../assets/About/s1.png";
+import s2 from "../../assets/About/s2.png";
 
 function AboutWhat() {
   return (
@@ -125,6 +128,9 @@ function AboutWhat() {
                 </div>
             </div>
         </div>
+
+        <img src={s1} alt="" className={style.img1} />
+        <img src={s2} alt="" className={style.img2} />
     </div>
   );
 }
