@@ -1,0 +1,65 @@
+.enterprize {
+  width: 100%;
+  padding: 6rem 10rem;
+  background: var(--secondary-color);
+  &__text {
+    h1 {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 1rem;
+      font-size: 2.2rem;
+    }
+    p:nth-child(1) {
+      color: #fff;
+    }
+    p {
+      width: 50%;
+      margin: auto;
+      margin-bottom: 1rem;
+      text-align: center;
+      color: #b2b2b2;
+    }
+  }
+
+  &__content{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 5rem;
+
+      .element{
+          width: 18%;
+          display: flex;
+          border: 1px solid #1C3752;
+          padding: 1rem;
+          border-radius: 6px;
+          
+          div{
+            color: var(--white-color);
+            font-size: 1.1rem;
+          }
+          .logo{
+              width: 30px;
+              height: 30px;
+              display: flex;
+              align-items: center;
+          }
+          .text{
+              width: calc(100% - 30px);
+          }
+      }
+  }
+
+  .globalLink{
+      margin-top: 4rem;
+      text-align: center;
+      a{
+          display: inline-block;
+          padding: 15px 30px;
+          text-decoration: none;
+          background: var(--primary-color);
+          color: var(--white-color);
+          font-size: 1rem;
+      }
+  }
+}

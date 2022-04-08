@@ -1,0 +1,149 @@
+.what {
+  width: 100%;
+  min-height: 100vh;
+  padding: 6rem 10rem;
+
+  &__identity {
+    width: 100%;
+    display: flex;
+
+    .head {
+      width: 50%;
+      p {
+        color: var(--primary-color);
+        font-size: 1.2rem;
+      }
+      h2 {
+        font-weight: normal;
+        font-size: 2rem;
+        line-height: 2.2rem;
+        margin-top: 1rem;
+      }
+    }
+    .text {
+      width: 50%;
+      p {
+        margin-bottom: 2rem;
+        line-height: 2rem;
+        font-size: 1.2rem;
+
+        &:last-child {
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: -2rem;
+            left: 0;
+            width: 10rem;
+            height: 4px;
+            background: gray;
+          }
+        }
+      }
+    }
+  }
+
+  &__enterprize {
+    background: #e5e5e5;
+    padding: 1.5rem;
+    margin-top: 6rem;
+    padding: 3rem;
+    display: flex;
+    min-height: 50vh;
+    border-radius: 6px;
+
+    .image {
+      width: 35%;
+      img {
+        width: 100%;
+      }
+    }
+    .text {
+      width: 65%;
+      padding-left: 2rem;
+      p.secondaryHead {
+        color: var(--primary-color);
+        font-size: 1.2rem;
+      }
+      h2 {
+        font-weight: normal;
+        font-size: 2rem;
+        line-height: 2.2rem;
+        margin-top: 1rem;
+      }
+      .missionVission {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid #ccc;
+        .mission,
+        .vission {
+          width: 48%;
+          margin-top: 1.5rem;
+          h4 {
+            font-size: 1rem;
+            font-weight: normal;
+          }
+          .textt {
+            display: flex;
+            margin-top: 0.8rem;
+            div {
+              &:first-child {
+                width: 40px;
+                color: var(--primary-color);
+              }
+              &:last-child {
+                width: calc(100% - 40px);
+                font-size: 1rem;
+                line-height: 1.5rem;
+              }
+            }
+          }
+        }
+      }
+
+      .finalTxt {
+        p {
+          font-size: 1rem;
+          line-height: 1.5rem;
+          &:first-child {
+            margin-bottom: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  .options {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    .option {
+      width: 30%;
+      display: flex;
+      justify-content: space-between;
+      padding: 1.3rem;
+      border-radius: 6px;
+      background: var(--white-color);
+      box-shadow: 0  5px 10px rgba(0,0,0,0.1);
+      .left {
+        width: 80%;
+        display: flex;
+        div{
+            &:first-child{
+                font-size: 1.5rem;
+                color: var(--primary-color);
+                margin-right: 1rem;
+            }
+        }
+      }
+      .right {
+        width: 20%;
+        color: var(--primary-color);
+        font-size: 2rem;
+      }
+    }
+  }
+}

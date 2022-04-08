@@ -1,0 +1,57 @@
+.aboutBanner {
+  width: 100%;
+  min-height: 100vh;
+  background: #165fff;
+  display: flex;
+
+  &__left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding-left: 180px;
+    p {
+      font-size: 1.4rem;
+      font-family: var(--font-primary);
+    }
+    h1 {
+      font-size: 3rem;
+      font-family: var(--font-primary);
+    }
+    a {
+      display: inline-block;
+      text-decoration: none;
+      padding: 15px 32px;
+      color: var(--primary-color);
+      background: var(--primary-color-light);
+      margin-top: 2rem;
+    }
+  }
+  &__right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    div {
+      min-width: 40%;
+      position: relative;
+      &:last-child {
+        min-width: 20%;
+      }
+      img {
+        position: absolute;
+        width: 90%;
+      }
+    }
+    .frame1 img {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .frame2 img,
+    .frame3 img {
+      bottom: 0;
+    }
+    .frame3 img {
+      width: 100%;
+    }
+  }
+}

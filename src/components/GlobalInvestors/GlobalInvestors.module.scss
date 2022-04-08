@@ -1,0 +1,21 @@
+.logos {
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+  .logos div {
+    width: 14%;
+    height: 4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+  }
+  .logos div img {
+    height: 100%;
+  }
+  
