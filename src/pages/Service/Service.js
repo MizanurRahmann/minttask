@@ -6,10 +6,12 @@ import GlobalWorks from "../../components/GlobalWorks/GlobalWorks";
 import ServiceSolution from "../../components/ServiceSolution/ServiceSolution";
 import GlobalContact from "../../components/GlobalContact/GlobalContact";
 import Footer from "../../components/Footer/Footer";
+import Navbar from "../../components/Navbar/Navbar";
 
 function Service() {
   return (
-    <div>
+    <>
+      <Navbar />
       <ServiceBanner />
       <ServiceServices />
       <ServiceEnterprize />
@@ -17,7 +19,7 @@ function Service() {
       <ServiceSolution />
       <GlobalContact />
       <Footer />
-    </div>
+    </>
   );
 }
 

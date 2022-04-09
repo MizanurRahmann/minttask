@@ -8,10 +8,12 @@ import HomeClients from "../../components/HomeClients/HomeClients";
 import HomeFeedback from "../../components/HomeFeedback/HomeFeedback";
 import HomeIndustries from "../../components/HomeIndustries/HomeIndustries";
 import HomeService from "../../components/HomeService/HomeService";
+import Navbar from "../../components/Navbar/Navbar";
 
 function Home() {
   return (
-    <div>
+    <>
+      <Navbar />
       <HomeBanner />
       <HomeService />
       <HomeIndustries />
@@ -21,7 +23,7 @@ function Home() {
       <HomeFeedback />
       <GlobalContact />
       <Footer />
-    </div>
+    </>
   );
 }
 

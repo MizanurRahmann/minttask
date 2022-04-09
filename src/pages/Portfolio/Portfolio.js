@@ -7,10 +7,12 @@ import PortfolioProjects from '../../components/PortfolioProjects/PortfolioProje
 import HomeFeedback from "../../components/HomeFeedback/HomeFeedback"
 import Footer from "../../components/Footer/Footer";
 import PortfolioTalk from '../../components/PortfolioTalk/PortfolioTalk'
+import Navbar from '../../components/Navbar/Navbar'
 
 function Portfolio() {
   return (
-    <div>
+    <>
+        <Navbar />
         <PortfolioBanner />
         <PortfolioClients />
         <PorfolioAproject />
@@ -19,7 +21,7 @@ function Portfolio() {
         <HomeFeedback />
         <PortfolioTalk />
         <Footer />
-    </div>
+    </>
   )
 }
 

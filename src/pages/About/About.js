@@ -5,17 +5,19 @@ import AboutInvestors from "../../components/AboutInvestors/AboutInvestors";
 import AboutWhat from "../../components/AboutWhat/AboutWhat";
 import Footer from "../../components/Footer/Footer";
 import GlobalContact from "../../components/GlobalContact/GlobalContact";
+import Navbar from "../../components/Navbar/Navbar";
 
 function About() {
   return (
-    <div>
+    <>
+      <Navbar />
       <AboutBanner />
       <AboutWhat />
       <AboutEnterprize />
       <AboutInvestors />
       <GlobalContact />
       <Footer />
-    </div>
+    </>
   );
 }
 
