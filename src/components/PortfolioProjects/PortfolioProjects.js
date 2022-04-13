@@ -37,9 +37,7 @@ function PortfolioProjects() {
           Veiw all
         </div>
         <div
-          className={
-            active === 2 ? `${style.option} ${style.active}` : `${style.option}`
-          }
+          className={active === 2 ? `${style.option} ${style.active}` : `${style.option}`}
           onClick={() => filterData(2, "mobile")}
         >
           Mobile App Development

@@ -1,5 +1,5 @@
 import style from "./HomeAchievements.module.scss";
-import { BsAward, BsCheckCircle } from "react-icons/bs";
+import { BsPatchCheck, BsCheckCircle } from "react-icons/bs";
 
 function HomeAchievements() {
   return (
@@ -9,7 +9,7 @@ function HomeAchievements() {
       <div className={style.achievements__head}>
         <div>
           <div className={style.logo}>
-            <BsAward />
+            <BsPatchCheck />
           </div>
           <p>Driving Enterprise</p>
           <h1>Explore Achievements</h1>

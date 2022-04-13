@@ -22,15 +22,19 @@
       padding-left: 2rem;
       p {
         color: var(--primary-color);
-        font-size: 1rem;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 28px;
       }
       h3 {
-        font-size: 2rem;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 42px;
         font-weight: normal;
         line-height: 2.5rem;
         margin-top: 1.5rem;
       }
-      .line{
+      .line {
         width: 10rem;
         height: 2px;
         margin-top: 2rem;
@@ -40,20 +44,22 @@
         display: block;
         color: var(--black-color);
         margin-top: 2rem;
-        font-size: 1rem;
-        line-height: 1.5rem;
+        font-size: 15px;
+        line-height: 21px;
       }
-      a{
-          display: block;
-          text-decoration: none;
-          color: var(--primary-color);
-          font-size: 1rem;
-          margin-top: 2rem;
-          display: flex;
-          span{
-              font-size: 1.5rem;
-              margin-left: 10px;
-          }
+      a {
+        display: block;
+        text-decoration: none;
+        color: var(--primary-color);
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 2rem;
+        display: flex;
+        span {
+          font-size: 1.5rem;
+          margin-left: 10px;
+        }
       }
     }
   }

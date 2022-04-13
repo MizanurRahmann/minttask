@@ -16,18 +16,20 @@
       margin-bottom: 1rem;
     }
     p {
-      font-size: 1rem;
-      line-height: 1.5rem;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 21px;
       color: #fff;
       &:last-child {
         color: #b2b2b2;
       }
     }
     h1 {
-      font-size: 2.5rem;
+      font-size: 36px;
+      line-height: 42px;
+      font-weight: 600;
       color: var(--white-color);
-      margin: 1rem 0;
-      font-weight: 500;
+      margin: 12px 0;
     }
   }
 
@@ -50,8 +52,10 @@
       margin-bottom: 4rem;
       p {
         display: block;
-        font-size: 1rem;
+        font-size: 15px;
+        line-height: 21px;
         color: #ccc;
+        font-weight: 400;
         margin-top: 0.8rem;
       }
       svg {

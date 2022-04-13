@@ -16,6 +16,7 @@ function ServiceSolution() {
         </div>
         <div className={style.wrapper__right}>
           <p>Our Solutions</p>
+          <h3>Our app development solutions</h3>
           <ul>
             <li>
               <div>

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
+import { CgArrowRight } from "react-icons/cg";
 import style from "./PortfolioProjects.module.scss";
 
 function Projects({ projects }) {
@@ -14,7 +15,7 @@ function Projects({ projects }) {
             <div className={style.text}>
               <h4>{prjct.name}</h4>
               <p>{prjct.text}</p>
-              <Link to="/">View Full Projects</Link>
+              <Link to="/">View Full Projects <span><CgArrowRight/></span></Link>
             </div>
           </div>
         ))}

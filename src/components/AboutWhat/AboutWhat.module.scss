@@ -12,12 +12,16 @@
       width: 50%;
       p {
         color: var(--primary-color);
-        font-size: 1.2rem;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 28px;
       }
       h2 {
         font-weight: normal;
-        font-size: 2rem;
-        line-height: 2.5rem;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 42px;
+        letter-spacing: -0.34px;
         margin-top: 1rem;
       }
     }
@@ -26,7 +30,7 @@
       p {
         margin-bottom: 2rem;
         line-height: 2rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
 
         &:last-child {
           position: relative;
@@ -36,7 +40,7 @@
             bottom: -2rem;
             left: 0;
             width: 10rem;
-            height: 4px;
+            height: 1px;
             background: gray;
           }
         }
@@ -64,12 +68,16 @@
       padding-left: 2rem;
       p.secondaryHead {
         color: var(--primary-color);
-        font-size: 1.2rem;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 26px;
       }
       h2 {
         font-weight: normal;
-        font-size: 2rem;
-        line-height: 2.5rem;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: -0.34px;
         margin-top: 1rem;
       }
       .missionVission {
@@ -83,8 +91,9 @@
           width: 48%;
           margin-top: 1.5rem;
           h4 {
-            font-size: 1rem;
-            font-weight: normal;
+            font-size: 18px;
+            line-height: 21px;
+            font-weight: 500;
           }
           .textt {
             display: flex;
@@ -96,8 +105,9 @@
               }
               &:last-child {
                 width: calc(100% - 40px);
-                font-size: 1rem;
-                line-height: 1.5rem;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
               }
             }
           }
@@ -106,8 +116,10 @@
 
       .finalTxt {
         p {
-          font-size: 1rem;
-          line-height: 1.5rem;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 21px;
           &:first-child {
             margin-bottom: 1.5rem;
           }
@@ -122,42 +134,47 @@
     justify-content: space-between;
     margin-top: 5rem;
     .option {
-      width: 30%;
+      width: 28%;
       display: flex;
       justify-content: space-between;
       padding: 1.3rem;
       border-radius: 6px;
       background: var(--white-color);
-      box-shadow: 0  5px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
       .left {
         width: 80%;
         display: flex;
-        div{
-            &:first-child{
-                font-size: 1.5rem;
-                color: var(--primary-color);
-                margin-right: 1rem;
-            }
+        align-items: center;
+        div {
+          &:first-child {
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 42px;
+            color: var(--primary-color);
+            margin-right: 1rem;
+          }
         }
       }
       .right {
         width: 20%;
         color: var(--primary-color);
-        font-size: 2rem;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 42px;
       }
     }
   }
 
   .img1,
-  .img2{
+  .img2 {
     position: absolute;
   }
-  .img1{
+  .img1 {
     top: -8rem;
     left: 0;
     height: 16rem;
   }
-  .img2{
+  .img2 {
     bottom: 10rem;
     right: 0;
     height: 10rem;

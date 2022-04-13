@@ -13,13 +13,16 @@
     h1 {
       text-align: center;
       color: #ffff;
-      font-size: 3rem;
-      line-height: 3.5rem;
+      font-size: 48px;
+      line-height: 56px;
+      font-weight: 700;
     }
     p {
       text-align: center;
       color: #ffff;
-      font-size: 1.6rem;
+      font-size: 26px;
+      font-weight: 700;
+      margin-top: 20px;
     }
 
     .btnGroup {
@@ -28,10 +31,18 @@
       margin-top: 2rem;
 
       button {
-        padding: 1rem 2rem;
+        width: 192px;
+        height: 66px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border: none;
+        border-radius: 6px;
         outline: none;
         margin-right: 2rem;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
         &:nth-child(1) {
           background-color: #175fff;
           color: #fff;
@@ -39,7 +50,7 @@
         &:nth-child(2) {
           background-color: #e7f1fe;
           color: #175fff;
-          border: 1px solid #175fff;
+          border: 2px solid #175fff;
         }
       }
     }
@@ -84,7 +95,7 @@
     .text {
       width: 10%;
       margin-right: 4rem;
-      color: #fff;
+      color: #808080;
     }
   }
 }

@@ -1,6 +1,6 @@
 .aboutBanner {
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
   background: #165fff;
   display: flex;
 
@@ -11,20 +11,33 @@
     color: #fff;
     padding-left: 180px;
     p {
-      font-size: 1.4rem;
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 36px;
       font-family: var(--font-primary);
+      margin-bottom: 1rem;
     }
     h1 {
-      font-size: 3rem;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 56px;
+      letter-spacing: 0.00014em;
       font-family: var(--font-primary);
     }
     a {
-      display: inline-block;
       text-decoration: none;
-      padding: 15px 32px;
       color: var(--primary-color);
       background: var(--primary-color-light);
       margin-top: 2rem;
+      width: 199px;
+      height: 66px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-kerning: 21px;
+      font-weight: 600;
+      border-radius: 4px;
     }
   }
   &__right {

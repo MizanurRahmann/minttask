@@ -48,7 +48,7 @@ function HomeService() {
                 organizations to create outcome
               </p>
               <Link to="/">
-                Explore more <span>&#x2192;</span>
+                Explore <span>&#x2192;</span>
               </Link>
             </div>
           </div>
@@ -63,7 +63,7 @@ function HomeService() {
                 organizations to create outcome
               </p>
               <Link to="/">
-                Explore more <span>&#x2192;</span>
+                Explore <span>&#x2192;</span>
               </Link>
             </div>
           </div>
@@ -78,7 +78,7 @@ function HomeService() {
                 organizations to create outcome
               </p>
               <Link to="/">
-                Explore more <span>&#x2192;</span>
+                Explore <span>&#x2192;</span>
               </Link>
             </div>
           </div>
@@ -93,7 +93,7 @@ function HomeService() {
                 organizations to create outcome
               </p>
               <Link to="/">
-                Explore more <span>&#x2192;</span>
+                Explore <span>&#x2192;</span>
               </Link>
             </div>
           </div>
@@ -108,7 +108,7 @@ function HomeService() {
                 organizations to create outcome
               </p>
               <Link to="/">
-                Explore more <span>&#x2192;</span>
+                Explore <span>&#x2192;</span>
               </Link>
             </div>
           </div>
@@ -123,7 +123,7 @@ function HomeService() {
                 organizations to create outcome
               </p>
               <Link to="/">
-                Explore more <span>&#x2192;</span>
+                Explore <span>&#x2192;</span>
               </Link>
             </div>
           </div>

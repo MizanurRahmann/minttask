@@ -19,9 +19,17 @@
       width: 60%;
       padding-left: 2rem;
       p {
-        font-size: 1rem;
+        font-size: 21px;
+        line-height: 26px;
         color: var(--primary-color);
         font-weight: 500;
+      }
+      h3 {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 42px;
+        margin-top: 8px;
+        margin-bottom: 24px;
       }
       ul {
         margin-top: 1.2rem;
@@ -36,8 +44,8 @@
             }
             &:last-child {
               width: calc(100% - 40px);
-              font-size: 1rem;
-              line-height: 1.5rem;
+              font-size: 15px;
+              line-height: 22px;
             }
           }
         }
@@ -64,7 +72,9 @@
         display: flex;
         div {
           &:first-child {
-            font-size: 1.5rem;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 42px;
             color: var(--primary-color);
             margin-right: 1rem;
           }
@@ -73,7 +83,9 @@
       .right {
         width: 20%;
         color: var(--primary-color);
-        font-size: 2rem;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 42px;
       }
     }
   }
