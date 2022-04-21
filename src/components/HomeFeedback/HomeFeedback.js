@@ -3,7 +3,6 @@ import Slider from "react-slick/lib/slider";
 import FeedBack from "./FeedBack";
 import style from "./HomeFeedback.module.scss";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
-import img22 from "../../assets/Home/Services/unsplash_Bl-LiSJOnlY.png";
 
 function HomeFeedback() {
   const slider = useRef(null);
@@ -24,13 +23,10 @@ function HomeFeedback() {
         <p>Why Choose us</p>
         <h1>Client Feedbacks</h1>
         <p>
-          I have done a software project with Codiant Software Technologies Pvt.
-          Ltd which was a difficult challenge for both of us because of the
-          language differences and the wide scope of work (web, IOS and
-          Android). However, they have delivered the project as per my
-          expectation and maybe better. I will keep working with them in other
-          project, and I recommended them as one of the best offshore tech
-          companies.
+          From ideation and conceptualization to application development,
+          ready-to-deploy assets, marketing and support, Codiant delights
+          clients of all sizes through agile deliveries and simplified
+          solutions.
         </p>
       </div>
 
@@ -56,8 +52,6 @@ function HomeFeedback() {
           <BsChevronRight />
         </div>
       </div>
-
-      <img className={style.absimage} src={img22} alt="" />
     </div>
   );
 }

@@ -6,7 +6,6 @@ import { RiCheckboxMultipleLine } from "react-icons/ri"
 // Components
 import ClientsLogo from "./ClientsLogo";
 import { Data } from "./Data";
-import img22 from "../../assets/Home/Industries/unsplash_9XngoIpxcEo.png";
 
 function HomeClients() {
     const [selected, setSelected] = useState(1)
@@ -15,7 +14,7 @@ function HomeClients() {
     <div className={style.clients}>
       <div className={style.clients__text}>
         <p>Driving Enterprise</p>
-        <h1>Clients We Cater</h1>
+        <h1>Clients We Care</h1>
         <p>
           From ideation and conceptualization to application development,
           ready-to-deploy assets, marketing and support, Codiant delights
@@ -126,8 +125,6 @@ function HomeClients() {
       </div>
       
       <ClientsLogo />
-      
-      <img className={style.absimage} src={img22} alt="" />
     </div>
   );
 }

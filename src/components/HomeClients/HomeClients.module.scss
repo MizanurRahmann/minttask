@@ -23,6 +23,7 @@
       font-size: 15px;
       line-height: 21px;
       font-weight: 400;
+      font-family: var(--font-secondary);
     }
   }
 
@@ -37,9 +38,13 @@
       display: flex;
       align-items: center;
       padding: 1rem 2rem;
-      background: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+      background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #0B2845;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
       border-radius: 6px;
+      font-family: var(--font-secondary);
+      font-size: 18px;
+      line-height: 21px;
+
       cursor: pointer;
       div:first-child {
         display: flex;
@@ -89,6 +94,7 @@
             font-size: 18px;
             line-height: 21px;
             font-weight: 500;
+            font-size: var(--font-secondary);
           }
           ul {
             margin-top: 21px;
@@ -108,12 +114,6 @@
         }
       }
     }
-  }
-
-  .absimage {
-    position: absolute;
-    top: -7rem;
-    left: -0.5rem;
   }
 }
 

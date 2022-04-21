@@ -8,8 +8,8 @@ function PortfolioHighlight() {
         <div className={style.content}>
           {/* text */}
           <div className={style.content__text}>
-            <p>Driving Enterprise</p>
-            <h1>Clients We Cater</h1>
+            <p>Clients</p>
+            <h1>Customer story highlight</h1>
             <p>
               From ideation and conceptualization to application development,
               ready-to-deploy assets, marketing and support, Codiant delights

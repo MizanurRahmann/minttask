@@ -1,7 +1,7 @@
 import style from "./ServiceServices.module.scss";
 import { FiMonitor } from "react-icons/fi";
-import { BsCodeSquare, BsHexagon } from "react-icons/bs";
-import img1 from "../../assets/Services/s1.png";
+import { BsCodeSquare, BsHexagon, BsArrowRight } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 function ServiceServices() {
   return (
@@ -70,6 +70,7 @@ function ServiceServices() {
               outstanding design, and impeccable development to create an
               exceptional iOS application that fits your needs.
             </p>
+            <Link to="/">Explore <span><BsArrowRight /></span></Link>
           </div>
           <div className={style.solution}>
             <div className={style.logo}>
@@ -89,6 +90,7 @@ function ServiceServices() {
               outstanding design, and impeccable development to create an
               exceptional iOS application that fits your needs.
             </p>
+            <Link to="/">Explore <span><BsArrowRight /></span></Link>
           </div>
           <div className={style.solution}>
             <div className={style.logo}>
@@ -108,10 +110,9 @@ function ServiceServices() {
               outstanding design, and impeccable development to create an
               exceptional iOS application that fits your needs.
             </p>
+            <Link to="/">Explore <span><BsArrowRight /></span></Link>
           </div>
         </div>
-
-        <img src={img1} alt="" className={style.absImage} />
       </div>
     </div>
   );

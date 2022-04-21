@@ -30,6 +30,7 @@
         margin-bottom: 2rem;
         line-height: 2rem;
         font-size: 1rem;
+        font-family: var(--font-secondary);
 
         &:last-child {
           position: relative;
@@ -69,6 +70,7 @@
         font-weight: 400;
         font-size: 15px;
         line-height: 21px;
+        font-family: var(--font-secondary);
       }
     }
     .solutions {
@@ -80,6 +82,7 @@
       padding: 0 6rem;
       .solution {
         width: 30%;
+        height: fit-content;
         padding: 2rem;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
         border-radius: 6px;
@@ -103,6 +106,18 @@
           font-weight: 400;
           font-size: 15px;
           line-height: 21px;
+          font-family: var(--font-secondary);
+        }
+        a{
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          color: #175FFF;
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: 600;
+          margin-top: 22px;
+          span{ margin-left: 8px; font-size: 1.5rem;}
         }
       }
     }

@@ -4,7 +4,6 @@ import Work from "./Work";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { useRef } from "react";
-import img from "../../assets/Global/Projects/a.png"
 
 function GlobalWorks() {
   const slider = useRef(null);
@@ -56,8 +55,6 @@ function GlobalWorks() {
           <BsChevronRight />
         </span>
       </Link>
-
-      <img className={style.absimage} src={img} alt="" />
     </div>
   );
 }

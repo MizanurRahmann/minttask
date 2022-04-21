@@ -24,6 +24,7 @@
     color: #B2B2B2;
     font-size: 15px;
     line-height: 21px;
+    font-family: var(--font-secondary);
 }
 .industries .industries__text p:nth-child(1){
     color: #fff;
@@ -35,6 +36,7 @@
 .content .content__options{
     width: 25%;
     min-height: 30vh;
+    padding-right: 4rem;
 }
 .content .content__options .option{
     display: flex;
@@ -49,9 +51,11 @@
     border: 1px solid var(--primary-color);
 }
 .content .content__options .option div{
-    color: #fff;
+    color: #E5E5E5;
     margin-left: 1rem;
-    font-size: 1rem;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: var(--font-secondary);
 }
 .content .content__options .option div:nth-child(1){
     display: flex;
@@ -80,6 +84,12 @@
     align-items: center;
     color: #ffff;
 }
+.content .content__detail .wrapper .heading h3{
+    font-family: var(--font-secondary);
+    font-size: 22px;
+    line-height: 28px;
+    color: #fcfcfc;
+}
 .content .content__detail .wrapper .elements{
     display: flex;
 }
@@ -97,12 +107,16 @@
 .elements .text p{
     font-size: 15px;
     line-height: 21px;
+    font-family: var(--font-secondary);
     // letter-spacing: -0.0419664em;
-    color: #fff;
+    color: #ccc;
 }
 .elements .text h4{
     margin-top: 35px;
-    color: #fff;
+    color: #ccc;
+    font-family: var(--font-secondary);
+    font-size: 18px;
+    line-height: 21px;
 }
 .elements .text ul{
     margin-top: 1rem;
@@ -115,6 +129,7 @@
     margin-bottom: 14px;
     display: flex;
     font-weight: 500;
+    font-family: var(--font-primary);
 }
 .elements .text ul li div:nth-child(1){
     margin-right: 1rem;

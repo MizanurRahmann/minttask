@@ -46,38 +46,60 @@ function Nav({ drawerToggleClickHnadler }) {
 
       <div className={styles.nav__links}>
         {/* Menu */}
-        <div id="dropdown" onClick={() => setMenuOpen(!menuOpen)}>
+        <NavLink
+          to="/service"
+          className={(navData) => (navData.isActive ? styles.activeLink : ``)} 
+          id="dropdown"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
           Services
           <span><BsChevronDown /></span>
           {menuOpen ? (
             <div className={styles.menus}>
-              <div className={styles.menu}>
+              <NavLink 
+                className={(navData) => (navData.isActive ? `${styles.activeLinkMenu} ${styles.menu}` : `${styles.menu}`)}
+                to="/service/mobile-app-development" 
+              >
                 <div><AiOutlineMobile /></div>
                 <div>Mobile App Development</div>
-              </div>
-              <div className={styles.menu}>
+              </NavLink>
+              <NavLink
+                className={(navData) => (navData.isActive ? `${styles.activeLinkMenu} ${styles.menu}` : `${styles.menu}`)}
+                to="/service/web-development"
+              >
                 <div><FiMonitor /></div>
                 <div>Web Development</div>
-              </div>
-              <div className={styles.menu}>
+              </NavLink>
+              <NavLink 
+                className={(navData) => (navData.isActive ? `${styles.activeLinkMenu} ${styles.menu}` : `${styles.menu}`)}
+                to="/service/strategic-ux-development"
+              >
                 <div><BsHexagon /></div>
                 <div>Strategic UX Development</div>
-              </div>
-              <div className={styles.menu}>
+              </NavLink>
+              <NavLink 
+                className={(navData) => (navData.isActive ? `${styles.activeLinkMenu} ${styles.menu}` : `${styles.menu}`)}
+                to="/service/eCommerce-development"
+              >
                 <div><BsCart /></div>
                 <div>eCommerce Development</div>
-              </div>
-              <div className={styles.menu}>
+              </NavLink>
+              <NavLink
+                className={(navData) => (navData.isActive ? `${styles.activeLinkMenu} ${styles.menu}` : `${styles.menu}`)}
+                to="/service/enterprise-Devops"
+              >
                 <div><BsCodeSquare /></div>
                 <div>Enterprise Devops</div>
-              </div>
+              </NavLink>
             </div>
           ) : null}
-        </div>
-        <NavLink className={(navData) => (navData.isActive ? styles.activeLink : ``)} to="/vacancies">Vacancies</NavLink>
-        <NavLink className={(navData) => (navData.isActive ? styles.activeLink : ``)} to="/case-studies">Our Cases</NavLink>
+        </NavLink>
+        <NavLink className={(navData) => (navData.isActive ? styles.activeLink : ``)} to="/hire">Hire Developers</NavLink>
         <NavLink className={(navData) => (navData.isActive ? styles.activeLink : ``)} to="/about">About us</NavLink>
-        <NavLink className={(navData) => (navData.isActive ? styles.activeLink : ``)} to="/contact">Contact</NavLink>
+        <NavLink className={(navData) => (navData.isActive ? styles.activeLink : ``)} to="/portfolio">Portfolio</NavLink>
+        <NavLink className={(navData) => (navData.isActive ? styles.activeLink : ``)} to="/blog">Blog</NavLink>
+        <NavLink className={(navData) => (navData.isActive ? styles.activeLink : ``)} to="/technologies">Technologies</NavLink>
+        <NavLink className={(navData) => (navData.isActive ? styles.activeLink : ``)} to="/contact">Contact Us</NavLink>
         <DrawerTogglerButton click={drawerToggleClickHnadler} />
       </div>
     </div>

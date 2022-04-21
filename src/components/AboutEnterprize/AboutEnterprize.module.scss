@@ -25,6 +25,7 @@
       font-weight: 400;
       font-size: 15px;
       line-height: 31px;
+      font-family: var(--font-secondary);
     }
   }
 
@@ -54,6 +55,7 @@
         width: calc(100% - 30px);
         font-size: 18px;
         line-height: 21px;
+        font-family: var(--font-secondary);
       }
     }
   }
@@ -73,6 +75,7 @@
       color: var(--white-color);
       font-weight: 600;
       font-size: 18px;
+      font-family: var(--font-secondary);
       line-height: 21px;
       margin: auto;
     }

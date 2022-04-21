@@ -40,8 +40,10 @@
         border-radius: 6px;
         outline: none;
         margin-right: 2rem;
-        font-size: 16px;
+        font-size: 18px;
+        line-height: 21px;
         font-weight: 600;
+        font-family: var(--font-secondary);
         cursor: pointer;
         &:nth-child(1) {
           background-color: #175fff;
@@ -74,6 +76,7 @@
       h4 {
         font-size: 1rem;
         margin-top: 1rem;
+        font-family: var(--font-secondary);
       }
     }
     .block.first {
@@ -96,6 +99,9 @@
       width: 10%;
       margin-right: 4rem;
       color: #808080;
+      p{
+        font-family: var(--font-secondary);
+      }
     }
   }
 }

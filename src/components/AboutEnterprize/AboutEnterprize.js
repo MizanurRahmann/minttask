@@ -7,7 +7,7 @@ function AboutEnterprize() {
   return (
     <div className={style.enterprize}>
       <div className={style.enterprize__text}>
-        <p>enterprize</p>
+        <p>Driving Enterprise</p>
         <h1>
           <div>This is one movement you </div>
           <div>don't want to miss</div>

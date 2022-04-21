@@ -20,7 +20,7 @@
       font-size: 15px;
       line-height: 21px;
       color: #f2f2f2;
-      font-family: var(--font-primary);
+      font-family: var(--font-secondary);
     }
     form {
       width: 100%;
@@ -40,7 +40,7 @@
           background: var(--white-color);
           outline: none;
           border: none;
-          font-family: var(--font-primary);
+          font-family: var(--font-secondary);
         }
       }
       textarea {
@@ -50,7 +50,7 @@
         background: var(--white-color);
         outline: none;
         border: none;
-        font-family: var(--font-primary);
+        font-family: var(--font-secondary);
       }
       button {
         height: 50px;
@@ -62,7 +62,7 @@
         color: var(--primary-color);
         background: #e7f1fe;
         margin-top: 1rem;
-        font-family: var(--font-primary);
+        font-family: var(--font-secondary);
         cursor: pointer;
         border-radius: 4px;
         display: flex;

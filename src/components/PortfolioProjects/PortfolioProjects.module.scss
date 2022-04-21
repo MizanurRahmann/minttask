@@ -15,6 +15,7 @@
       font-weight: 500;
       font-size: 18px;
       line-height: 21px;
+      font-family: var(--font-secondary);
     }
     .active {
       border-bottom: 2px solid var(--primary-color);
@@ -44,12 +45,15 @@
           font-size: 15px;
           line-height: 21px;
           margin-bottom: 1rem;
+          font-family: var(--font-secondary);
         }
         p {
           font-weight: 400;
           font-size: 15px;
           line-height: 21px;
           margin-bottom: 1rem;
+          font-family: var(--font-secondary);
+          color: rgba(0,0,0,0.7);
         }
         a {
           text-decoration: none;

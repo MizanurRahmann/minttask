@@ -7,9 +7,7 @@ import img2 from "../../assets/Home/Services/Settings_Future.png";
 import img3 from "../../assets/Home/Services/Window_Code_Block.png";
 import img4 from "../../assets/Home/Services/Shopping_Cart_02.png";
 import img5 from "../../assets/Home/Services/Monitor.png";
-import img6 from "../../assets/Home/Services/unsplash_Bl-LiSJOnlY.png";
-import img7 from "../../assets/Home/Services/unsplash_voM1Z9cGPCU.png";
-import { BsChevronRight } from "react-icons/bs";
+import { BsChevronRight, BsArrowRight } from "react-icons/bs";
 
 function HomeService() {
   const settings = {
@@ -47,9 +45,7 @@ function HomeService() {
                 solutions help startups, small-medium enterprises, and
                 organizations to create outcome
               </p>
-              <Link to="/">
-                Explore <span>&#x2192;</span>
-              </Link>
+              <Link to="/">Explore  <span>More</span> <span><BsArrowRight /></span></Link>
             </div>
           </div>
           {/* Slider 2 */}
@@ -62,9 +58,7 @@ function HomeService() {
                 solutions help startups, small-medium enterprises, and
                 organizations to create outcome
               </p>
-              <Link to="/">
-                Explore <span>&#x2192;</span>
-              </Link>
+              <Link to="/">Explore  <span>More</span> <span><BsArrowRight /></span></Link>
             </div>
           </div>
           {/* Slider 3 */}
@@ -77,9 +71,7 @@ function HomeService() {
                 solutions help startups, small-medium enterprises, and
                 organizations to create outcome
               </p>
-              <Link to="/">
-                Explore <span>&#x2192;</span>
-              </Link>
+              <Link to="/">Explore  <span>More</span> <span><BsArrowRight /></span></Link>
             </div>
           </div>
           {/* Slider 4 */}
@@ -92,9 +84,7 @@ function HomeService() {
                 solutions help startups, small-medium enterprises, and
                 organizations to create outcome
               </p>
-              <Link to="/">
-                Explore <span>&#x2192;</span>
-              </Link>
+              <Link to="/">Explore  <span>More</span> <span><BsArrowRight /></span></Link>
             </div>
           </div>
           {/* Slider 5 */}
@@ -107,9 +97,7 @@ function HomeService() {
                 solutions help startups, small-medium enterprises, and
                 organizations to create outcome
               </p>
-              <Link to="/">
-                Explore <span>&#x2192;</span>
-              </Link>
+              <Link to="/">Explore  <span>More</span> <span><BsArrowRight /></span></Link>
             </div>
           </div>
           {/* Slider 6 */}
@@ -122,9 +110,7 @@ function HomeService() {
                 solutions help startups, small-medium enterprises, and
                 organizations to create outcome
               </p>
-              <Link to="/">
-                Explore <span>&#x2192;</span>
-              </Link>
+              <Link to="/">Explore  <span>More</span> <span><BsArrowRight /></span></Link>
             </div>
           </div>
         </Slider>
@@ -133,9 +119,6 @@ function HomeService() {
           <Link to="/">Explore all our services <span><BsChevronRight /></span></Link>
         </div>
       </div>
-
-      <img className={style.img1} src={img6} alt="" />
-      <img className={style.img2} src={img7} alt="" />
     </div>
   );
 }

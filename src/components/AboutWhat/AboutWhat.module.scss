@@ -31,6 +31,7 @@
         margin-bottom: 2rem;
         line-height: 2rem;
         font-size: 1rem;
+        font-family: var(--font-secondary);
 
         &:last-child {
           position: relative;
@@ -94,6 +95,7 @@
             font-size: 18px;
             line-height: 21px;
             font-weight: 500;
+            font-family: var(--font-secondary);
           }
           .textt {
             display: flex;
@@ -120,6 +122,7 @@
           font-weight: 400;
           font-size: 15px;
           line-height: 21px;
+          font-family: var(--font-secondary);
           &:first-child {
             margin-bottom: 1.5rem;
           }
@@ -163,20 +166,5 @@
         line-height: 42px;
       }
     }
-  }
-
-  .img1,
-  .img2 {
-    position: absolute;
-  }
-  .img1 {
-    top: -8rem;
-    left: 0;
-    height: 16rem;
-  }
-  .img2 {
-    bottom: 10rem;
-    right: 0;
-    height: 10rem;
   }
 }
