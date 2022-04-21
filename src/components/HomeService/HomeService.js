@@ -7,7 +7,7 @@ import img2 from "../../assets/Home/Services/Settings_Future.png";
 import img3 from "../../assets/Home/Services/Window_Code_Block.png";
 import img4 from "../../assets/Home/Services/Shopping_Cart_02.png";
 import img5 from "../../assets/Home/Services/Monitor.png";
-import { BsArrowRight } from "react-icons/bs";
+import { BsChevronRight, BsArrowRight } from "react-icons/bs";
 
 function HomeService() {
   const settings = {
@@ -116,7 +116,7 @@ function HomeService() {
         </Slider>
 
         <div className={style.globalLink}>
-        <Link to="/">Explore  <span>More</span> <span><BsArrowRight /></span></Link>
+        <Link to="/">Explore  all our services<span><BsChevronRight /></span></Link>
         </div>
       </div>
     </div>
