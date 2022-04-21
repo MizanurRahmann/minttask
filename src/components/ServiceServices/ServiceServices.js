@@ -70,7 +70,7 @@ function ServiceServices() {
               outstanding design, and impeccable development to create an
               exceptional iOS application that fits your needs.
             </p>
-            <Link to="/">Explore <span><BsArrowRight /></span></Link>
+            <Link to="/">Explore  <span>More</span> <span><BsArrowRight /></span></Link>
           </div>
           <div className={style.solution}>
             <div className={style.logo}>
@@ -90,7 +90,7 @@ function ServiceServices() {
               outstanding design, and impeccable development to create an
               exceptional iOS application that fits your needs.
             </p>
-            <Link to="/">Explore <span><BsArrowRight /></span></Link>
+            <Link to="/">Explore  <span>More</span> <span><BsArrowRight /></span></Link>
           </div>
           <div className={style.solution}>
             <div className={style.logo}>
@@ -110,7 +110,7 @@ function ServiceServices() {
               outstanding design, and impeccable development to create an
               exceptional iOS application that fits your needs.
             </p>
-            <Link to="/">Explore <span><BsArrowRight /></span></Link>
+            <Link to="/">Explore  <span>More</span> <span><BsArrowRight /></span></Link>
           </div>
         </div>
       </div>
