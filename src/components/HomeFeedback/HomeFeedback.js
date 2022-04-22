@@ -15,6 +15,8 @@ function HomeFeedback() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: "0",
   };
 
   return (
@@ -41,9 +43,9 @@ function HomeFeedback() {
 
         <div
           className={style.sliderArrow1}
-          onClick={() => slider?.current?.slickPrev()}
+          onClick={() => slider?.current?.slickNext()}
         >
-          <BsChevronLeft />
+          <BsChevronRight />
         </div>
         <div
           className={style.sliderArrow2}

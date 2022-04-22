@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../../components/Footer/Footer";
 import GlobalContact from "../../components/GlobalContact/GlobalContact";
 import GlobalWorks from "../../components/GlobalWorks/GlobalWorks";
@@ -11,6 +11,12 @@ import HomeService from "../../components/HomeService/HomeService";
 import Navbar from "../../components/Navbar/Navbar";
 
 function Home() {
+
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, []);
+
+
   return (
     <>
       <Navbar />

@@ -51,7 +51,7 @@ function Nav({ drawerToggleClickHnadler }) {
 
       <div className={styles.nav__links}>
         {/* Menu */}
-        <div
+        <NavLink
           onClick={handleMenuClick}
           className={(navData) => (navData.isActive ? styles.activeLink : ``)} 
           id="dropdown"
@@ -98,7 +98,7 @@ function Nav({ drawerToggleClickHnadler }) {
               </NavLink>
             </div>
           ) : null}
-        </div>
+        </NavLink>
         <NavLink className={(navData) => (navData.isActive ? styles.activeLink : ``)} to="/hire">Hire Developers</NavLink>
         <NavLink className={(navData) => (navData.isActive ? styles.activeLink : ``)} to="/about">About us</NavLink>
         <NavLink className={(navData) => (navData.isActive ? styles.activeLink : ``)} to="/portfolio">Portfolio</NavLink>

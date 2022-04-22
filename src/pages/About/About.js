@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AboutBanner from "../../components/AboutBanner/AboutBanner";
 import AboutEnterprize from "../../components/AboutEnterprize/AboutEnterprize";
 import AboutInvestors from "../../components/AboutInvestors/AboutInvestors";
@@ -8,6 +8,12 @@ import GlobalContact from "../../components/GlobalContact/GlobalContact";
 import Navbar from "../../components/Navbar/Navbar";
 
 function About() {
+  
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, []);
+
+
   return (
     <>
       <Navbar />

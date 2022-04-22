@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ServiceBanner from "../../components/ServiceBanner/ServiceBanner";
 import ServiceEnterprize from "../../components/ServiceEnterprize/ServiceEnterprize";
 import ServiceServices from "../../components/ServiceServices/ServiceServices";
@@ -9,6 +9,11 @@ import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 
 function Service() {
+
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, []);
+
   return (
     <>
       <Navbar />

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import PorfolioAproject from '../../components/PorfolioAproject/PorfolioAproject'
 import PortfolioBanner from '../../components/PortfolioBanner/PortfolioBanner'
 import PortfolioClients from '../../components/PortfolioClients/PortfolioClients'
@@ -10,6 +10,11 @@ import PortfolioTalk from '../../components/PortfolioTalk/PortfolioTalk'
 import Navbar from '../../components/Navbar/Navbar'
 
 function Portfolio() {
+  
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, []);
+
   return (
     <>
         <Navbar />

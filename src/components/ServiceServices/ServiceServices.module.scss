@@ -3,9 +3,11 @@
   min-height: 100vh;
 
   &__identity {
-    width: 100%;
+    width: calc(100% - 12rem);
     display: flex;
-    padding: 6rem 10rem 0 10rem;
+    padding: 24px;
+    margin: 6rem 6rem 0 6rem;
+    background: #F7F8FA;
 
     .head {
       width: 50%;
@@ -28,8 +30,9 @@
       width: 50%;
       p {
         margin-bottom: 2rem;
-        line-height: 2rem;
-        font-size: 1rem;
+        font-size: 15px;
+        line-height: 21px;
+        font-weight: 400;
         font-family: var(--font-secondary);
 
         &:last-child {
@@ -37,7 +40,7 @@
           &::after {
             content: "";
             position: absolute;
-            bottom: -2rem;
+            bottom: -24px;
             left: 0;
             width: 10rem;
             height: 1px;
@@ -51,7 +54,7 @@
   &__solutions {
     width: 100%;
     position: relative;
-    padding: 8rem 10rem;
+    padding: 6rem 10rem;
     .text {
       h1 {
         font-weight: 500;

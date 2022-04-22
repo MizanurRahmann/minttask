@@ -31,9 +31,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 1rem;
+        margin-bottom: 16px;
         input {
-          width: 49%;
+          width: calc(50% - 8px);
           padding: 20px 30px;
           font-size: 1rem;
           border-radius: 3px;
@@ -61,7 +61,7 @@
         border: 2px solid var(--primary-color);
         color: var(--primary-color);
         background: #e7f1fe;
-        margin-top: 1rem;
+        margin-top: 24px;
         font-family: var(--font-secondary);
         cursor: pointer;
         border-radius: 4px;

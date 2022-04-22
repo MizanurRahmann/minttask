@@ -48,7 +48,8 @@
     }
     a,
     div {
-      display: block;
+      display: flex;
+      align-items: center;
       text-decoration: none;
       margin-left: 0.8rem;
       color: var(--white-color);
@@ -60,6 +61,7 @@
       cursor: pointer;
       span {
         margin-left: 1rem;
+        margin-top: 3px;
       }
       @include media("<=desktop") {
         margin-left: 0.5rem;
@@ -88,8 +90,9 @@
         justify-content: center;
       }
     }
-    div {
+    a {
       position: relative;
+      
       .menus {
         width: 35rem;
         position: absolute;

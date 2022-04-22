@@ -1,6 +1,6 @@
 .feedback {
   width: 100%;
-  min-height: 85vh;
+  min-height: 84vh;
   position: relative;
 
   &__text {
@@ -24,7 +24,7 @@
       line-height: 21px;
       font-family: var(--font-secondary);
       color: rgba(0, 0, 0, 0.7);
-      &:nth-child(1){
+      &:nth-child(1) {
         color: #808080;
       }
     }
@@ -41,7 +41,7 @@
       .feedback {
         min-height: fit-content;
         border-radius: 8px;
-        
+
         padding: 2rem;
         &__container {
           background: #fff;
@@ -84,11 +84,21 @@
 
     .sliderArrow1,
     .sliderArrow2 {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
       position: absolute;
       top: 50%;
-      font-size: 2.6rem;
+      font-size: 2rem;
       color: var(--primary-color);
       cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+      &:hover {
+        background: #e7f1fe;
+      }
     }
     .sliderArrow1 {
       left: 5rem;
@@ -96,5 +106,11 @@
     .sliderArrow2 {
       right: 5rem;
     }
+  }
+
+  .slick-slide.slick-center{
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    transform: scale(1.25);
   }
 }

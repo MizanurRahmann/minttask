@@ -19,8 +19,10 @@ function PorfolioAproject() {
           <div className={style.line}></div>
           <p className={style.text}>
             Being a rising name in the IT industry across the world, we deliver
-            quality services in a timely fashion to help our clients gain a
-            leading edge in this competitive market.
+            quality services in a timely <br /> fashion to help our clients gain a
+            leading.
+            <br />
+            edge in this competitive market.
           </p>
 
           <Link to="/portfolio">View full project <span><CgArrowRight/></span></Link>
