@@ -149,6 +149,9 @@
         background: #76DA46;
       }
     }
+    a.activeLinkContact{
+      background: rgba(255, 255, 255, 0.4);
+    }
   }
 }
 
@@ -161,6 +164,9 @@
       &:nth-child(7) {
         border: 1px solid var(--black-color);
       }
+    }
+    a.activeLinkContact{
+      background: rgba(0, 0, 0, 0.1);
     }
   }
   .menus{

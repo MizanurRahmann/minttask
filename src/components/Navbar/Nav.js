@@ -104,7 +104,7 @@ function Nav({ drawerToggleClickHnadler }) {
         <NavLink className={(navData) => (navData.isActive ? styles.activeLink : ``)} to="/portfolio">Portfolio</NavLink>
         <NavLink className={(navData) => (navData.isActive ? styles.activeLink : ``)} to="/blog">Blog</NavLink>
         <NavLink className={(navData) => (navData.isActive ? styles.activeLink : ``)} to="/technologies">Technologies</NavLink>
-        <NavLink className={(navData) => (navData.isActive ? styles.activeLink : ``)} to="/contact">Contact Us</NavLink>
+        <NavLink className={(navData) => (navData.isActive ? styles.activeLinkContact : ``)} to="/contact">Contact Us</NavLink>
         <DrawerTogglerButton click={drawerToggleClickHnadler} />
       </div>
     </div>

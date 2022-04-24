@@ -6,6 +6,8 @@ import About from "./pages/About/About";
 import Service from "./pages/Service/Service";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import ContactUs from "./pages/ContactUs/ContactUs";
+import Blog from "./pages/Blog/Blog";
+import Technology from "./pages/Technology/Technology";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route path="/service/mobile-app-development" element={<Service />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/technologies" element={<Technology />} />
       </Routes>
     </div>
   );
