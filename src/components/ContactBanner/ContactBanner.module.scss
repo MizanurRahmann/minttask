@@ -1,0 +1,53 @@
+.banner {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  background: var(--primary-color);
+  padding: 207px 100px 120px 100px;
+
+  &__left {
+    width: 35%;
+    h3 {
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 36px;
+      color: var(--white-color);
+    }
+    h1 {
+      font-size: 48px;
+      line-height: 56px;
+      font-weight: bold;
+      color: var(--white-color);
+      margin: 21px 0;
+    }
+    p {
+      font-size: 15px;
+      line-height: 21px;
+      font-family: var(--font-secondary);
+      font-weight: 400;
+      color: var(--white-color);
+    }
+  }
+
+  &__right {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    a {
+        text-decoration: none;
+        color: var(--primary-color);
+        background: var(--primary-color-light);
+        width: 199px;
+        height: 66px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        line-height: 21px;
+        font-family: var(--font-secondary);
+        font-weight: 600;
+        border-radius: 4px;
+      }
+  }
+}

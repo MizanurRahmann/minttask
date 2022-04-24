@@ -5,6 +5,7 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Service from "./pages/Service/Service";
 import Portfolio from "./pages/Portfolio/Portfolio";
+import ContactUs from "./pages/ContactUs/ContactUs";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/service/mobile-app-development" element={<Service />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<ContactUs />} />
       </Routes>
     </div>
   );
