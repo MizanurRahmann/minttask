@@ -16,7 +16,7 @@ function Nav({ drawerToggleClickHnadler }) {
 
   const handleScroll = () => {
     const position = window.pageYOffset;
-    if (position > 400) {
+    if (position > 150) {
       setOpen(true);
     } else {
       setOpen(false);

@@ -15,84 +15,84 @@ import img13 from "../../assets/Portfolio/projects/p13.png";
 export const data = [
     {
         id: 1,
-        name: "Media",
+        name: "Madelia",
         text: "Being a rising name in the IT industry across the world, we deliver quality services in a timely.",
         banner: img12,
         type: ["mobile", "app", "expertise"]
     },
     {
         id: 2,
-        name: "Media",
+        name: "Madelia",
         text: "Being a rising name in the IT industry across the world, we deliver quality services in a timely.",
         banner: img1,
         type: ["mobile", "app"]
     },
     {
         id: 3,
-        name: "Media",
+        name: "Madelia",
         text: "Being a rising name in the IT industry across the world, we deliver quality services in a timely.",
         banner: img2,
         type: ["mobile", "app", "expertise"]
     },
     {
         id: 4,
-        name: "Media",
+        name: "Madelia",
         text: "Being a rising name in the IT industry across the world, we deliver quality services in a timely.",
         banner: img3,
         type: ["mobile", "app"]
     },
     {
         id: 5,
-        name: "Media",
+        name: "Madelia",
         text: "Being a rising name in the IT industry across the world, we deliver quality services in a timely.",
         banner: img5,
         type: ["mobile", "app"]
     },
     {
         id: 6,
-        name: "Media",
+        name: "Madelia",
         text: "Being a rising name in the IT industry across the world, we deliver quality services in a timely.",
         banner: img6,
         type: ["mobile", "expertise"]
     },
     {
         id: 7,
-        name: "Media",
+        name: "Madelia",
         text: "Being a rising name in the IT industry across the world, we deliver quality services in a timely.",
         banner: img7,
         type: ["app", "expertise"]
     },
     {
         id: 8,
-        name: "Media",
+        name: "Madelia",
         text: "Being a rising name in the IT industry across the world, we deliver quality services in a timely.",
         banner: img8,
         type: ["app", "expertise"]
     },
     {
         id: 9,
-        name: "Media",
+        name: "Madelia",
         text: "Being a rising name in the IT industry across the world, we deliver quality services in a timely.",
         banner: img10,
         type: ["mobile", "app", "expertise"]
     },
     {
         id: 10,
-        name: "Media",
+        name: "Madelia",
         text: "Being a rising name in the IT industry across the world, we deliver quality services in a timely.",
         banner: img4,
         type: ["app", "expertise"]
     },
     {
         id: 11,
-        name: "Media",
+        name: "Madelia",
         text: "Being a rising name in the IT industry across the world, we deliver quality services in a timely.",
         banner: img9,
         type: ["mobile", "app", "expertise"]
     },
     {
         id: 12,
-        name: "Media",
+        name: "Madelia",
         text: "Being a rising name in the IT industry across the world, we deliver quality services in a timely.",
         banner: img13,
         type: ["mobile"]

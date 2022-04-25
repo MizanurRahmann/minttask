@@ -2,9 +2,10 @@ import { useRef } from "react";
 import Slider from "react-slick/lib/slider";
 import FeedBack from "./FeedBack";
 import style from "./HomeFeedback.module.scss";
-import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
+import { BsChevronRight } from "react-icons/bs";
+import "./slickStyle.scss";
 
-function HomeFeedback() {
+function HomeFeedback({background}) {
   const slider = useRef(null);
 
   const settings = {
@@ -20,7 +21,7 @@ function HomeFeedback() {
   };
 
   return (
-    <div className={style.feedback}>
+    <div className={style.feedback} style={{background: background}}>
       <div className={style.feedback__text}>
         <p>Why Choose us</p>
         <h1>Client Feedbacks</h1>
@@ -34,11 +35,11 @@ function HomeFeedback() {
 
       <div className={style.slider}>
         <Slider className={style.allFeedBacks} {...settings} ref={slider}>
-          <FeedBack id={1} />
-          <FeedBack id={2} />
-          <FeedBack id={3} />
-          <FeedBack id={4} />
-          <FeedBack id={5} />
+          <FeedBack id={1} background={background} />
+          <FeedBack id={2} background={background} />
+          <FeedBack id={3} background={background} />
+          <FeedBack id={4} background={background} />
+          <FeedBack id={5} background={background} />
         </Slider>
 
         <div

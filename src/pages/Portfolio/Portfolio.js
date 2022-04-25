@@ -23,7 +23,7 @@ function Portfolio() {
         <PorfolioAproject />
         <PortfolioProjects />
         <PortfolioHighlight />
-        <HomeFeedback />
+        <HomeFeedback background={`#fff`} />
         <PortfolioTalk />
         <Footer />
     </>

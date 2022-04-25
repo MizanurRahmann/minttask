@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
+import { GoChevronRight, GoChevronLeft } from "react-icons/go";
 import { CgArrowRight } from "react-icons/cg";
 import style from "./PortfolioProjects.module.scss";
 
@@ -15,7 +15,7 @@ function Projects({ projects }) {
             <div className={style.text}>
               <h4>{prjct.name}</h4>
               <p>{prjct.text}</p>
-              <Link to="/">View Full Projects <span><CgArrowRight/></span></Link>
+              <Link to="/">View full project <span><CgArrowRight/></span></Link>
             </div>
           </div>
         ))}
@@ -23,7 +23,7 @@ function Projects({ projects }) {
 
       <div className={style.pagination}>
         <div>
-          <BsChevronLeft />
+          <GoChevronLeft />
         </div>
         <div>1</div>
         <div>2</div>
@@ -34,7 +34,7 @@ function Projects({ projects }) {
         <div>9</div>
         <div>10</div>
         <div>
-          <BsChevronRight />
+          <GoChevronRight />
         </div>
       </div>
     </>

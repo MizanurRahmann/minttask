@@ -2,9 +2,9 @@ import style from "./HomeFeedback.module.scss";
 import { FaQuoteLeft } from "react-icons/fa";
 import user from "../../assets/Home/Feedback/user.png";
 
-function FeedBack({ id }) {
+function FeedBack({ id, background }) {
   return (
-    <div className={style.feedback}>
+    <div className={style.feedback} style={{background: background}}>
       <div className={style.feedback__container}>
         <div className={style.quote}>
           <FaQuoteLeft />

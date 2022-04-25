@@ -9,7 +9,7 @@
       display: flex;
       align-items: center;
       color: #fff;
-      padding-left: 180px;
+      padding-left: 100px;
       p {
         font-weight: 600;
         font-size: 26px;
@@ -40,8 +40,9 @@
       .frame {
         position: absolute;
         top: 50%;
-        left: 12rem;
+        right: 100px;
         transform: translateY(-50%);
+        width: 600px;
       }
     }
   }

@@ -1,12 +1,12 @@
 .industries {
     width: 100%;
-    min-height: 100vh;
+    min-height: fit-content;
     background: #0b2845;
   }
   .industries__text {
-    padding-top: 10rem;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-top: 60px;
+    padding-left: 100px;
+    padding-right: 10px;
   }
   .industries .industries__text h1 {
     text-align: center;
@@ -33,7 +33,7 @@
   
   .industries .content {
     display: flex;
-    padding: 3rem 10rem;
+    padding: 3rem 100px 60px 100px;
     position: relative;
   }
   .content .content__options {
@@ -79,7 +79,7 @@
   .industries .content .arrowButton{
       position: absolute;
       top: 55vh;
-      left: 19rem;
+      left: 16rem;
       color: var(--primary-color);
       font-size: 1.2rem;
       cursor: pointer;
@@ -88,7 +88,7 @@
   // ////////////////////////////////////////////////////////////////
   .content .content__detail {
     width: 75%;
-    padding-left: 5rem;
+    padding-left: 50px;
   }
   .content .content__detail .wrapper {
     width: 100%;
@@ -109,6 +109,10 @@
     font-size: 22px;
     line-height: 28px;
     color: #fcfcfc;
+  }
+  .content .content__detail .wrapper .heading span{
+    color: #175FFF;
+    font-size: 1.2rem;
   }
   .content .content__detail .wrapper .elements {
     display: flex;

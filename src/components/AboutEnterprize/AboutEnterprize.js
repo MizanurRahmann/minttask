@@ -1,6 +1,6 @@
 import style from "./AboutEnterprize.module.scss";
 import { AiOutlineHeart } from "react-icons/ai";
-import {RiCheckboxMultipleLine} from "react-icons/ri";
+import { RiCheckboxMultipleLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
 function AboutEnterprize() {
@@ -26,26 +26,53 @@ function AboutEnterprize() {
       </div>
 
       <div className={style.enterprize__content}>
-          <div className={style.element}>
-              <div className={style.logo}><AiOutlineHeart /></div>
-              <div className={style.text}>Healthcare &Fitness</div>
+        <div className={style.element}>
+          <div className={style.logo}>
+            <AiOutlineHeart />
           </div>
-          <div className={style.element}>
-              <div className={style.logo}><RiCheckboxMultipleLine /></div>
-              <div className={style.text}>On-Demand Solutions</div>
+          <div className={style.text}>
+            <div>Healthcare</div>
+            <div>& Fitness</div>
           </div>
-          <div className={style.element}>
-              <div className={style.logo}><RiCheckboxMultipleLine /></div>
-              <div className={style.text}>Transport & Automation</div>
+        </div>
+
+        <div className={style.element}>
+          <div className={style.logo}>
+            <RiCheckboxMultipleLine />
           </div>
-          <div className={style.element}>
-              <div className={style.logo}><RiCheckboxMultipleLine /></div>
-              <div className={style.text}>Enterprise Mobility</div>
+          <div className={style.text}>
+            <div>On-Demand</div>
+            <div>Solutions</div>
           </div>
-          <div className={style.element}>
-              <div className={style.logo}><RiCheckboxMultipleLine /></div>
-              <div className={style.text}>Food & Restaurant</div>
+        </div>
+
+        <div className={style.element}>
+          <div className={style.logo}>
+            <RiCheckboxMultipleLine />
           </div>
+          <div className={style.text}>
+            <div>Transport</div>
+            <div>& Automation</div>
+          </div>
+        </div>
+        <div className={style.element}>
+          <div className={style.logo}>
+            <RiCheckboxMultipleLine />
+          </div>
+          <div className={style.text}>
+            <div>Enterprise</div>
+            <div>Mobility</div>
+          </div>
+        </div>
+        <div className={style.element}>
+          <div className={style.logo}>
+            <RiCheckboxMultipleLine />
+          </div>
+          <div className={style.text}>
+            <div>Food</div>
+            <div>& Restaurant</div>
+          </div>
+        </div>
       </div>
 
       <div className={style.globalLink}>

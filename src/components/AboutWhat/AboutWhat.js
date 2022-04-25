@@ -150,9 +150,9 @@ function AboutWhat() {
           <div className={style.wrap}>
             <div className={style.left}>
               <div>
-                <BsCart />
+                <AiOutlineMobile />
               </div>
-              <div>Sales & Marketing</div>
+              <div>Business Analytics</div>
             </div>
             <div className={style.right}>10%</div>
           </div>

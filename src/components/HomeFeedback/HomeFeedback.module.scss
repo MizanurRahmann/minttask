@@ -1,12 +1,13 @@
 .feedback {
   width: 100%;
-  min-height: 84vh;
+  min-height: 78vh;
   position: relative;
+  background: #F5F5F7;
 
   &__text {
     padding-top: 6rem;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 100px;
+    padding-right: 100px;
     h1 {
       text-align: center;
       margin-bottom: 1rem;
@@ -36,7 +37,7 @@
     overflow: hidden;
     .allFeedBacks {
       margin-top: 4rem;
-      padding: 0 10rem;
+      padding: 0 90px;
       align-items: center !important;
       .feedback {
         min-height: fit-content;
@@ -89,7 +90,7 @@
       border-radius: 50%;
       position: absolute;
       top: 50%;
-      font-size: 2rem;
+      font-size: 1.8rem;
       color: var(--primary-color);
       cursor: pointer;
       display: flex;
@@ -101,16 +102,10 @@
       }
     }
     .sliderArrow1 {
-      left: 5rem;
+      left: 50px;
     }
     .sliderArrow2 {
-      right: 5rem;
+      right: 50px;
     }
-  }
-
-  .slick-slide.slick-center{
-    -webkit-transform: scale(1.25);
-    -moz-transform: scale(1.25);
-    transform: scale(1.25);
   }
 }

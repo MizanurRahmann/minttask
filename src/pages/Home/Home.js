@@ -26,9 +26,9 @@ function Home() {
       <HomeService />
       <GlobalIndustries data={Data} />
       <HomeClients />
-      <GlobalWorks background={`#E5E5E5`} />
+      <GlobalWorks background={`#F5F5F7`} />
       <HomeAchievements />
-      <HomeFeedback />
+      <HomeFeedback background={`#F5F5F7`} />
       <GlobalContact />
       <Footer />
     </>

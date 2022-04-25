@@ -5,7 +5,7 @@ import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { useRef } from "react";
 
-function GlobalWorks() {
+function GlobalWorks({background}) {
   const slider = useRef(null);
 
   const settings = {
@@ -19,7 +19,7 @@ function GlobalWorks() {
   };
 
   return (
-    <div className={style.works}>
+    <div className={style.works} style={{background: background}}>
       <div className={style.works__text}>
         <h1>
           Explore Our <span>Recent Work</span>

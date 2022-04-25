@@ -1,11 +1,12 @@
 .achievements {
   width: 100%;
+  height: fit-content;
   background: #0b2845;
   display: flex;
 
   &__head {
     width: 55%;
-    padding: 10rem;
+    padding: 60px 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,7 +39,8 @@
 
   &__achieves {
     width: 45%;
-    padding: 6rem 10rem 6rem 3rem;
+    height: fit-content;
+    padding: 60px 100px;
     display: flex;
     justify-content: space-between;
     .block1 {
@@ -52,7 +54,9 @@
       padding: 1.5rem 1.5rem 2.5rem 1.5rem;
       background: #243d57;
       border-radius: 6px;
-      margin-bottom: 4rem;
+      &:not(:last-child){
+        margin-bottom: 4rem;
+      }
       p {
         display: block;
         font-size: 15px;

@@ -43,7 +43,9 @@ function ServiceServices() {
         <div className={style.text}>
           <h1>
             <div>Android, IOS & Flutter Mobile App</div>
-            <div>Development <span>Services</span></div>
+            <div>
+              Development <span>Services</span>
+            </div>
           </h1>
           <p>
             Custom mobile app development company with expert team of remote and
@@ -70,7 +72,12 @@ function ServiceServices() {
               outstanding design, and impeccable development to create an
               exceptional iOS application that fits your needs.
             </p>
-            <Link to="/">Explore  <span>More</span> <span><BsArrowRight /></span></Link>
+            <Link to="/">
+              Explore <span>More</span>{" "}
+              <span>
+                <BsArrowRight />
+              </span>
+            </Link>
           </div>
           <div className={style.solution}>
             <div className={style.logo}>
@@ -81,16 +88,22 @@ function ServiceServices() {
               <div>DevOps</div>
             </h4>
             <p>
-              Zignuts Technolab offers its iOS app development services in
-              designing and developing custom mobile apps for iPhone & iPad.
-              Hire iOS app developers who have skills and expertise in
-              everything ranging from iOS App development, app design, app
-              support and maintenance. While you can focus on your business, our
-              native iOS app development team combine in-depth research,
-              outstanding design, and impeccable development to create an
-              exceptional iOS application that fits your needs.
+              Don’t have to spend time building your own Android developers
+              team, instead start working on your Android project right away
+              with Zignuts Technolab to save time – a top rateted Android
+              application development company. We offer custom, end-to-end,
+              full-stack Android app development services. Our skilled and
+              experts team specialises in customised and scalable applications
+              for Android devices, including smartphones, tablets, Android TVs,
+              and more. Book your risk-free trial of 2 weeks, retaining the
+              rights to your code if you cancel the partnership.
             </p>
-            <Link to="/">Explore  <span>More</span> <span><BsArrowRight /></span></Link>
+            <Link to="/">
+              Explore <span>More</span>{" "}
+              <span>
+                <BsArrowRight />
+              </span>
+            </Link>
           </div>
           <div className={style.solution}>
             <div className={style.logo}>
@@ -101,16 +114,21 @@ function ServiceServices() {
               <div>Development</div>
             </h4>
             <p>
-              Zignuts Technolab offers its iOS app development services in
-              designing and developing custom mobile apps for iPhone & iPad.
-              Hire iOS app developers who have skills and expertise in
-              everything ranging from iOS App development, app design, app
-              support and maintenance. While you can focus on your business, our
-              native iOS app development team combine in-depth research,
-              outstanding design, and impeccable development to create an
-              exceptional iOS application that fits your needs.
+              Flutter enables building and deploying apps for iOS and Android
+              using a single code base. It reduces the app’s time-to-market and
+              its development costs. Are you wondering how to choose the best
+              Flutter app development company for your cross-platform project?
+              Our team consists of top Flutter app developers, who can build
+              your beautiful native app with Flutter in record time. Try us for
+              2 weeks, retaining the rights to your code if you cancel the
+              partnership
             </p>
-            <Link to="/">Explore  <span>More</span> <span><BsArrowRight /></span></Link>
+            <Link to="/">
+              Explore <span>More</span>{" "}
+              <span>
+                <BsArrowRight />
+              </span>
+            </Link>
           </div>
         </div>
       </div>

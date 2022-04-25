@@ -1,15 +1,14 @@
 import React from "react";
 import style from "./GlobalIndustries.module.scss";
 import { AiOutlineCheck } from "react-icons/ai";
+import { FaHeart } from "react-icons/fa";
 
 function Detail({ option, data }) {
   return (
     <>
       <div className={style.heading}>
         <h3>{data[option - 1].head}</h3>
-        <span>
-          <img src="./assets/Home/Industries/Vector2.png" alt="" />
-        </span>
+        <span><FaHeart /></span>
       </div>
       
       <div className={style.elements}>

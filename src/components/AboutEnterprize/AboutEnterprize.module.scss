@@ -50,11 +50,17 @@
         height: 30px;
         display: flex;
         align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        margin-right: 19px;
+        svg{
+          margin-top: 5px;
+        }
       }
       .text {
-        width: calc(100% - 30px);
+        width: calc(100% - 49px);
         font-size: 18px;
-        line-height: 21px;
+        line-height: 22px;
         font-family: var(--font-secondary);
       }
     }

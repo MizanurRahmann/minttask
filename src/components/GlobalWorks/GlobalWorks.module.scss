@@ -33,7 +33,7 @@
         overflow: hidden;
         .allworks{
             margin-top: 4rem;
-            padding: 0 10rem;
+            padding: 0 100px;
             .work{
                 min-height: 50vh;
                 border-radius: 8px;
@@ -77,15 +77,15 @@
         .sliderArrow2{
             position: absolute;
             top: 50%;
-            font-size: 3rem;
+            font-size: 2.5rem;
             color: var(--primary-color);
             cursor: pointer;
         }
         .sliderArrow1{
-            left: 5rem;
+            left: 50px;
         }
         .sliderArrow2{
-            right: 5rem;
+            right: 50px;
         }
     }
 
