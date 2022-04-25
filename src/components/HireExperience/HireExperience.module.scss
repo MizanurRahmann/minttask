@@ -1,0 +1,26 @@
+.hireexperience {
+  width: 100%;
+  padding: 60px;
+  background: #e7f1fe;
+
+  p {
+    font-size: 15px;
+    font-weight: 500;
+    font-family: var(--font-secondary);
+    line-height: 21px;
+    color: #808080;
+    text-align: center;
+    &:nth-child(2) {
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  h1{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: -0.34px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+}

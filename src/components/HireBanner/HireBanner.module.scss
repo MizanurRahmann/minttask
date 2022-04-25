@@ -39,9 +39,8 @@
       position: relative;
       .frame {
         position: absolute;
-        top: 50%;
+        bottom: 0;
         right: 100px;
-        transform: translateY(-50%);
       }
     }
   }

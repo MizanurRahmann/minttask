@@ -1,0 +1,24 @@
+import style from './HireBanner.module.scss';
+import img1 from "../../assets/Hire/banner.png";
+
+function HireBanner() {
+  return (
+    <div className={style.banner}>
+        <div className={style.banner__left}>
+        <div>
+          <p>Hire Our Dedicated Virtual Team</p>
+          <h1>
+            <div>Hire Dedicated</div>
+            <div>Developer</div>
+          </h1>
+        </div>
+      </div>
+
+      <div className={style.banner__right}>
+        <img src={img1} alt="" className={style.frame} />
+      </div>
+    </div>
+  )
+}
+
+export default HireBanner
