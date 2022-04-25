@@ -10,6 +10,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import {Data} from "./DrivingEnterprizeData";
 import HireClients from "../../components/HireClients/HireClients";
 import HireExperience from "../../components/HireExperience/HireExperience";
+import HireFaq from "../../components/HireFaq/HireFaq";
 
 function Hire() {
   useEffect(() => {
@@ -24,6 +25,7 @@ function Hire() {
       <GlobalIndustries data={Data} />
       <HireClients />
       <HireExperience />
+      <HireFaq />
       <GlobalContact />
       <Footer />
     </>

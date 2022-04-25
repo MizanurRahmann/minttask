@@ -1,5 +1,6 @@
 import style from './HireBanner.module.scss';
 import img1 from "../../assets/Hire/banner.png";
+import { Link } from 'react-router-dom';
 
 function HireBanner() {
   return (
@@ -11,6 +12,7 @@ function HireBanner() {
             <div>Hire Dedicated</div>
             <div>Developer</div>
           </h1>
+          <Link to="/hire">Contact Us</Link>
         </div>
       </div>
 
