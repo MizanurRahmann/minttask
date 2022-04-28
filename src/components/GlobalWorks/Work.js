@@ -48,7 +48,8 @@ function Work({id}) {
   return (
     <div className={style.work}>
         <div className={style.work__container}>
-            <img src={Data[id - 1].image} alt="" />
+            <div className={style.image} style={{background: `url(${Data[id - 1].image}) no-repeat center center / cover`}}>
+            </div>
             <div className={style.content}>
                 <h4>{Data[id - 1].name}</h4>
                 <p>{Data[id - 1].desc}</p>

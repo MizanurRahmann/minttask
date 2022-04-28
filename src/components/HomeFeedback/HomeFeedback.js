@@ -2,7 +2,7 @@ import { useRef } from "react";
 import Slider from "react-slick/lib/slider";
 import FeedBack from "./FeedBack";
 import style from "./HomeFeedback.module.scss";
-import { BsChevronRight } from "react-icons/bs";
+import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
 import "./slickStyle.scss";
 
 function HomeFeedback({background}) {
@@ -44,9 +44,9 @@ function HomeFeedback({background}) {
 
         <div
           className={style.sliderArrow1}
-          onClick={() => slider?.current?.slickNext()}
+          onClick={() => slider?.current?.slickPrev()}
         >
-          <BsChevronRight />
+          <BsChevronLeft />
         </div>
         <div
           className={style.sliderArrow2}

@@ -8,7 +8,7 @@ function Detail({ option, data }) {
     <>
       <div className={style.heading}>
         <h3>{data[option - 1].head}</h3>
-        <span><FaHeart /></span>
+        <span>{data[option - 1].optionLogo}</span>
       </div>
       
       <div className={style.elements}>
