@@ -47,12 +47,14 @@
           padding: 2rem;
           background: #ffffff;
           box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+          border: 1px solid transparent;
           border-radius: 8px;
-          transition: 0.3s;
+          transition: all 0.3s;
 
           img {
             width: 3rem;
             margin-bottom: 24px;
+            transition: 0.3s;
           }
           h3 {
             font-size: 21px;
@@ -96,6 +98,9 @@
           &:hover a span:first-child{
             display: block;
           }
+          &:hover img{
+            transform: scale(0.85);
+          }
         }
       }
     }
@@ -118,6 +123,10 @@
           margin-top: 5px;
           margin-left: 10px;
           font-weight: bold;
+          transition: all 0.3s;
+        }
+        &:hover span{
+          transform: scale(1.5);
         }
       }
     }

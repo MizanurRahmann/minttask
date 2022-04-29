@@ -41,12 +41,16 @@
       padding: 1rem 2rem;
       background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #0B2845;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border: 1px solid transparent;
       border-radius: 6px;
       font-family: var(--font-secondary);
       font-size: 18px;
       line-height: 21px;
-
       cursor: pointer;
+      transition: 0.3s;
+      &:hover{
+        border: 1px solid rgba(0, 0, 0, 0.2);
+      }
       div:first-child {
         display: flex;
         align-items: center;

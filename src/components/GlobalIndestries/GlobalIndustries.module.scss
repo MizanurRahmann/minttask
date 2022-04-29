@@ -50,10 +50,15 @@
   }
   .content .content__options .option .optionWrapper {
     padding: 12px 14px;
-    border: 1px solid #5e5b5b;
+    border: 2px solid rgba(94, 91, 91, 0.6);
     border-radius: 6px;
     cursor: pointer;
+    transition: 0.3s;
   }
+  .content .content__options .option .optionWrapper:hover{
+    background: rgba(28, 55, 82, 0.4);
+  }
+
   .content .content__options .option.active .optionWrapper {
     border: 1px solid var(--primary-color);
   }

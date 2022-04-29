@@ -37,7 +37,7 @@
         align-items: center;
         justify-content: center;
         border: none;
-        border-radius: 6px;
+        border-radius: 4px;
         outline: none;
         margin-right: 2rem;
         font-size: 18px;
@@ -48,11 +48,21 @@
         &:nth-child(1) {
           background-color: #175fff;
           color: #fff;
+          transition: 0.3s;
+          &:hover{
+            background-color: #99B9FF;
+          }
         }
         &:nth-child(2) {
           background-color: #e7f1fe;
           color: #175fff;
           border: 2px solid #175fff;
+          transition: 0.3s;
+          &:hover{
+            background-color: #E7F1FE;
+            border: 2px solid #99B9FF;;
+            color: #153AB7;
+          }
         }
       }
     }
@@ -70,6 +80,7 @@
       height: 10.5rem;
       width: 10.5rem;
       padding: 2rem;
+      cursor: pointer;
       img {
         width: 1.5rem;
       }
@@ -80,12 +91,20 @@
       }
     }
     .block.first {
-      background: #175fff;
+      background: rgba(23, 95, 255, 1);;
       color: #fff;
+      transition: 0.3s;
+      &:hover{
+        background: rgba(23, 95, 255, 0.6);
+      }
     }
     .block.second {
       background: #0b2845;
       color: #fff;
+      transition: 0.3s;
+      &:hover{
+        background: #051526;;
+      }
     }
     .logo {
       height: 5rem;
