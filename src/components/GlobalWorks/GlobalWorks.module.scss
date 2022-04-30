@@ -42,7 +42,12 @@
           background: #fff;
           height: 57vh;
           border-radius: 8px;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+          border: 1px solid transparent;
+          transition: 0.3s;
+          &:hover {
+            border: 1px solid rgba(0, 0, 0, 0.2);
+          }
           .image {
             width: 100%;
             height: 35vh;
@@ -94,6 +99,9 @@
       &:hover {
         background: #e7f1fe;
       }
+      &:active {
+        background: #9ec8fa;
+      }
     }
     .sliderArrow1 {
       left: 50px;
@@ -104,24 +112,24 @@
   }
 
   a.global {
+    text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
-    color: var(--primary-color);
     font-size: 18px;
-    font-family: var(--font-secondary);
-    line-height: 21px;
     font-weight: 600;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    color: #325ce8;
     span {
-      margin-left: 8px;
       font-size: 1.2rem;
-      font-weight: 700;
-      svg {
-        margin-top: 8px;
-      }
+      margin-top: 5px;
+      margin-left: 10px;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+    &:hover span {
+      transform: translateX(7px);
     }
   }
 }

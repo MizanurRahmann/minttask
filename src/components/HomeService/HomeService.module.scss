@@ -126,7 +126,7 @@
           transition: all 0.3s;
         }
         &:hover span{
-          transform: scale(1.5);
+          transform: translateX(7px);
         }
       }
     }

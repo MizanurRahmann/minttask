@@ -6,9 +6,21 @@ import { RiCheckboxMultipleLine } from "react-icons/ri"
 // Components
 import ClientsLogo from "./ClientsLogo";
 import { Data } from "./Data";
+import Slider from "react-slick/lib/slider";
 
 function HomeClients() {
     const [selected, setSelected] = useState(1)
+
+    const settings = {
+      dots: false,
+      arrows: false,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 3500,
+      speed: 1500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
 
   return (
     <div className={style.clients}>
@@ -51,7 +63,14 @@ function HomeClients() {
       {/* /////////////////////////////////////// */}
       <div className={style.enterprize}>
         <div className={style.image}>
-          <img src={Data[selected - 1].image} alt="" />
+          {/* <img src={Data[selected - 1].image} alt="" /> */}
+          <Slider {...settings} className={style.slider}>
+            {Data[selected - 1].imageSlide.map(image => (
+              <div className={style.slider__container}>
+                <img src={image} alt="" />
+              </div>
+            ))}
+          </Slider>
         </div>
         <div className={style.content}>
           <h3>{Data[selected - 1].head}</h3>
