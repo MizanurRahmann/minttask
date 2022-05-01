@@ -59,46 +59,34 @@ function Nav({ drawerToggleClickHnadler }) {
         >
           Services
           <span><BsChevronDown /></span>
-          {menuOpen ? (
             <div className={styles.menus}>
-              <NavLink 
-                className={`${styles.menu}`}
-                to="/service/mobile-app-development" 
-              >
+              <NavLink  className={`${styles.menu}`} to="/service/mobile-app-development" >
                 <div><AiOutlineMobile /></div>
                 <div>Mobile App Development</div>
               </NavLink>
-              <NavLink
-                className={`${styles.menu}`}
-                to="/service/web-development"
-              >
+              
+              <NavLink className={`${styles.menu}`} to="/service/web-development">
                 <div><FiMonitor /></div>
                 <div>Web Development</div>
               </NavLink>
-              <NavLink 
-                className={`${styles.menu}`}
-                to="/service/strategic-ux-development"
-              >
+
+              <NavLink className={`${styles.menu}`} to="/service/strategic-ux-development">
                 <div><BsHexagon /></div>
                 <div>Strategic UX Development</div>
               </NavLink>
-              <NavLink 
-                className={`${styles.menu}`}
-                to="/service/eCommerce-development"
-              >
+
+              <NavLink  className={`${styles.menu}`} to="/service/eCommerce-development">
                 <div><BsCart /></div>
                 <div>eCommerce Development</div>
               </NavLink>
-              <NavLink
-                className={`${styles.menu}`}
-                to="/service/enterprise-Devops"
-              >
+
+              <NavLink className={`${styles.menu}`} to="/service/enterprise-Devops">
                 <div><BsCodeSquare /></div>
                 <div>Enterprise Devops</div>
               </NavLink>
             </div>
-          ) : null}
         </NavLink>
+        
         <NavLink className={(navData) => (navData.isActive ? styles.activeLink : ``)} to="/hire">Hire Developers</NavLink>
         <NavLink className={(navData) => (navData.isActive ? styles.activeLink : ``)} to="/about">About us</NavLink>
         <NavLink className={(navData) => (navData.isActive ? styles.activeLink : ``)} to="/portfolio">Portfolio</NavLink>
