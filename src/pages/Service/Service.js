@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
-import ServiceBanner from "../../components/ServiceBanner/ServiceBanner";
-import ServiceEnterprize from "../../components/ServiceEnterprize/ServiceEnterprize";
-import ServiceServices from "../../components/ServiceServices/ServiceServices";
-import GlobalWorks from "../../components/GlobalWorks/GlobalWorks";
-import ServiceSolution from "../../components/ServiceSolution/ServiceSolution";
-import GlobalContact from "../../components/GlobalContact/GlobalContact";
+import ServiceBanner from "../../components/Service/ServiceBanner/ServiceBanner";
+import ServiceEnterprize from "../../components/Service/ServiceEnterprize/ServiceEnterprize";
+import ServiceServices from "../../components/Service/ServiceServices/ServiceServices";
+import GlobalWorks from "../../components/Global/GlobalWorks/GlobalWorks";
+import ServiceSolution from "../../components/Service/ServiceSolution/ServiceSolution";
+import GlobalContact from "../../components/Global/GlobalContact/GlobalContact";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 

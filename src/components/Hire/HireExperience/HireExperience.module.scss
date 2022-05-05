@@ -1,0 +1,136 @@
+.hireexperience {
+  width: 100%;
+  padding: 60px 84px;
+  background: #e7f1fe;
+
+  &__image{
+    width: 100%;
+    margin-bottom: 62px;
+    img{
+      width: 100%;
+    }
+  }
+
+  p {
+    font-size: 15px;
+    font-weight: 500;
+    font-family: var(--font-secondary);
+    line-height: 21px;
+    color: #808080;
+    text-align: center;
+  }
+
+  h1 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: -0.34px;
+    color: rgba(0, 0, 0, 0.8);
+    margin: 12px 0 24px 0;
+  }
+  .secondText {
+    color: rgba(0, 0, 0, 0.7);
+    width: 45%;
+    margin: auto;
+  }
+
+  .infos {
+    display: flex;
+    justify-content: center;
+    margin-top: 56px;
+    margin-bottom: 80px;
+    .info {
+        margin: 0 35px;
+      h2 {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 48px;
+        letter-spacing: -0.00352em;
+        color: rgba(0, 0, 0, 0.5);
+        margin-bottom: 32px;
+        text-align: center;
+      }
+      p {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 21px;
+        letter-spacing: -0.0419664px;
+        color: rgba(0, 0, 0, 0.5);
+        font-family: var(--font-secondary);
+        text-align: center;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #325ce8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span{
+        margin-top: 5px;
+        margin-left: 8px;
+    }
+  }
+}
+
+
+.options {
+  width: 110%;
+  padding-top: 0;
+  margin-top: 123px;
+  margin-bottom: 123px;
+  margin-left: -4%;
+
+  .option {
+    width: 100%;
+    height: 10vh;
+    padding: 0 2rem;
+    .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 6px;
+      padding: 1.3rem;
+      background: var(--white-color);
+      box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+      .left {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        div {
+          font-weight: 500;
+          font-size: 30px;
+          line-height: 42px;
+        }
+        div {
+          &:first-child {
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 42px;
+            color: var(--primary-color);
+            margin-right: 1rem;
+            margin-top: 8px;
+          }
+        }
+      }
+      .right {
+        width: 20%;
+        color: var(--primary-color);
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 42px;
+      }
+    }
+  }
+}

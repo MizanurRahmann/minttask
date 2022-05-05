@@ -1,11 +1,11 @@
 import { useEffect } from "react";
-import { data } from "../../components/TechnologyTech/Data";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
-import TechnologyBanner from "../../components/TechnologyBanner/TechnologyBanner";
-import TechnologyDetail from "../../components/TechnologyDetail/TechnologyDetail";
-import TechnologyTech from "../../components/TechnologyTech/TechnologyTech";
-import PortfolioTalk from '../../components/PortfolioTalk/PortfolioTalk';
+import { data } from "../../components/Technology/TechnologyTech/Data";
+import TechnologyBanner from "../../components/Technology/TechnologyBanner/TechnologyBanner";
+import TechnologyDetail from "../../components/Technology/TechnologyDetail/TechnologyDetail";
+import TechnologyTech from "../../components/Technology/TechnologyTech/TechnologyTech";
+import PortfolioTalk from '../../components/Portfolio/PortfolioTalk/PortfolioTalk';
 
 function Technology() {
   useEffect(() => {

@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import Footer from "../../components/Footer/Footer";
-import GlobalContact from "../../components/GlobalContact/GlobalContact";
-import GlobalIndustries from "../../components/GlobalIndestries/GlobalIndustries";
-import GlobalWorks from "../../components/GlobalWorks/GlobalWorks";
-import HomeAchievements from "../../components/HomeAchievements/HomeAchievements";
-import HomeBanner from "../../components/HomeBanner/HomeBanner";
-import HomeClients from "../../components/HomeClients/HomeClients";
-import HomeFeedback from "../../components/HomeFeedback/HomeFeedback";
-import HomeService from "../../components/HomeService/HomeService";
+import GlobalContact from "../../components/Global/GlobalContact/GlobalContact";
+import GlobalIndustries from "../../components/Global/GlobalIndestries/GlobalIndustries";
+import GlobalWorks from "../../components/Global/GlobalWorks/GlobalWorks";
+import HomeAchievements from "../../components/Home/HomeAchievements/HomeAchievements";
+import HomeBanner from "../../components/Home/HomeBanner/HomeBanner";
+import HomeClients from "../../components/Home/HomeClients/HomeClients";
+import HomeFeedback from "../../components/Home/HomeFeedback/HomeFeedback";
+import HomeService from "../../components/Home/HomeService/HomeService";
 import Navbar from "../../components/Navbar/Navbar";
 
 import { Data } from "./IndustrySlideData";

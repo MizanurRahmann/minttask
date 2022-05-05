@@ -9,6 +9,7 @@ import ContactUs from "./pages/ContactUs/ContactUs";
 import Blog from "./pages/Blog/Blog";
 import Technology from "./pages/Technology/Technology";
 import Hire from "./pages/Hire/Hire";
+import Career from "./pages/Career/Career";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/technologies" element={<Technology />} />
         <Route path="/hire" element={<Hire />} />
+        <Route path="/career" element={<Career />} />
       </Routes>
     </div>
   );

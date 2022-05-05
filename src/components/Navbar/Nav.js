@@ -12,7 +12,6 @@ import DrawerTogglerButton from "./DrawerTogglerButton";
 
 function Nav({ drawerToggleClickHnadler }) {
   const [open, setOpen] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleScroll = () => {
     const position = window.pageYOffset;
@@ -23,23 +22,17 @@ function Nav({ drawerToggleClickHnadler }) {
     }
   };
 
-  const handleClick = (event) => {
-    if (event.target.id.length === 0) {
-      setMenuOpen(false);
-    }
-  };
 
   const handleMenuClick = (event) => {
-    if(!menuOpen){ event.preventDefault(); }
-    setMenuOpen(!menuOpen);
+    event.preventDefault();
   }
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll, { passive: true });
-    window.addEventListener("click", handleClick, { passive: true });
+    // window.addEventListener("click", handleClick, { passive: true });
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("click", handleClick);
+      // window.removeEventListener("click", handleClick);
     };
   }, []);
 
@@ -57,8 +50,7 @@ function Nav({ drawerToggleClickHnadler }) {
           id="dropdown"
           to="/service"
         >
-          Services
-          <span><BsChevronDown /></span>
+          <div className={styles.barier}>Services <span><BsChevronDown /></span></div>
             <div className={styles.menus}>
               <NavLink  className={`${styles.menu}`} to="/service/mobile-app-development" >
                 <div><AiOutlineMobile /></div>
@@ -87,12 +79,24 @@ function Nav({ drawerToggleClickHnadler }) {
             </div>
         </NavLink>
         
-        <NavLink className={(navData) => (navData.isActive ? styles.activeLink : ``)} to="/hire">Hire Developers</NavLink>
-        <NavLink className={(navData) => (navData.isActive ? styles.activeLink : ``)} to="/about">About us</NavLink>
-        <NavLink className={(navData) => (navData.isActive ? styles.activeLink : ``)} to="/portfolio">Portfolio</NavLink>
-        <NavLink className={(navData) => (navData.isActive ? styles.activeLink : ``)} to="/blog">Blog</NavLink>
-        <NavLink className={(navData) => (navData.isActive ? styles.activeLink : ``)} to="/technologies">Technologies</NavLink>
-        <NavLink className={(navData) => (navData.isActive ? styles.activeLinkContact : ``)} to="/contact">Contact Us</NavLink>
+        <NavLink className={(navData) => (navData.isActive ? styles.activeLink : ``)} to="/hire">
+          <div className={styles.barier}>Hire Developers</div>
+        </NavLink>
+        <NavLink className={(navData) => (navData.isActive ? styles.activeLink : ``)} to="/about">
+          <div className={styles.barier}>About us</div>
+        </NavLink>
+        <NavLink className={(navData) => (navData.isActive ? styles.activeLink : ``)} to="/portfolio">
+          <div className={styles.barier}>Portfolio</div>
+        </NavLink>
+        <NavLink className={(navData) => (navData.isActive ? styles.activeLink : ``)} to="/blog">
+          <div className={styles.barier}>Blog</div>
+        </NavLink>
+        <NavLink className={(navData) => (navData.isActive ? styles.activeLink : ``)} to="/technologies">
+          <div className={styles.barier}>Technologies</div>
+        </NavLink>
+        <NavLink className={(navData) => (navData.isActive ? styles.activeLinkContact : ``)} to="/contact">
+        <div className={styles.barier}>Contact</div>
+        </NavLink>
         <DrawerTogglerButton click={drawerToggleClickHnadler} />
       </div>
     </div>

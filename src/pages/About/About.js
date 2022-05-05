@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
-import AboutBanner from "../../components/AboutBanner/AboutBanner";
-import AboutEnterprize from "../../components/AboutEnterprize/AboutEnterprize";
-import AboutInvestors from "../../components/AboutInvestors/AboutInvestors";
-import AboutWhat from "../../components/AboutWhat/AboutWhat";
+import AboutBanner from "../../components/About/AboutBanner/AboutBanner";
+import AboutEnterprize from "../../components/About/AboutEnterprize/AboutEnterprize";
+import AboutInvestors from "../../components/About/AboutInvestors/AboutInvestors";
+import AboutWhat from "../../components/About/AboutWhat/AboutWhat";
 import Footer from "../../components/Footer/Footer";
-import GlobalContact from "../../components/GlobalContact/GlobalContact";
+import GlobalContact from "../../components/Global/GlobalContact/GlobalContact";
 import Navbar from "../../components/Navbar/Navbar";
 
 function About() {

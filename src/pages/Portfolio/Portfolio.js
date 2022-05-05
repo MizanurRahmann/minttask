@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
-import PorfolioAproject from '../../components/PorfolioAproject/PorfolioAproject'
-import PortfolioBanner from '../../components/PortfolioBanner/PortfolioBanner'
-import PortfolioClients from '../../components/PortfolioClients/PortfolioClients'
-import PortfolioHighlight from '../../components/PortfolioHighlight/PortfolioHighlight'
-import PortfolioProjects from '../../components/PortfolioProjects/PortfolioProjects'
-import HomeFeedback from "../../components/HomeFeedback/HomeFeedback"
+import PorfolioAproject from '../../components/Portfolio/PorfolioAproject/PorfolioAproject'
+import PortfolioBanner from '../../components/Portfolio/PortfolioBanner/PortfolioBanner'
+import PortfolioClients from '../../components/Portfolio/PortfolioClients/PortfolioClients'
+import PortfolioHighlight from '../../components/Portfolio/PortfolioHighlight/PortfolioHighlight'
+import PortfolioProjects from '../../components/Portfolio/PortfolioProjects/PortfolioProjects'
+import PortfolioTalk from '../../components/Portfolio/PortfolioTalk/PortfolioTalk'
+import HomeFeedback from "../../components/Home/HomeFeedback/HomeFeedback"
 import Footer from "../../components/Footer/Footer";
-import PortfolioTalk from '../../components/PortfolioTalk/PortfolioTalk'
 import Navbar from '../../components/Navbar/Navbar'
 
 function Portfolio() {
