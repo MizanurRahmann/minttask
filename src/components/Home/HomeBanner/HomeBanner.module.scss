@@ -89,6 +89,9 @@
         margin-top: 1rem;
         font-family: var(--font-secondary);
       }
+      h4, svg{
+        color: #fff;
+      }
     }
     .block.first {
       background: rgba(23, 95, 255, 1);;
@@ -100,7 +103,6 @@
     }
     .block.second {
       background: #0b2845;
-      color: #fff;
       transition: 0.3s;
       &:hover{
         background: #051526;;

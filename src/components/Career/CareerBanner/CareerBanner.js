@@ -1,6 +1,5 @@
 import style from "./CareerBanner.module.scss";
-import img1 from "../../../assets/Hire/banner.png";
-import { Link } from 'react-router-dom';
+import img1 from "../../../assets/Career/unsplash_jDdkEddFuBI.png";
 
 function CareerBanner() {
   return (

@@ -10,6 +10,7 @@ import Blog from "./pages/Blog/Blog";
 import Technology from "./pages/Technology/Technology";
 import Hire from "./pages/Hire/Hire";
 import Career from "./pages/Career/Career";
+import CareerDetails from "./pages/CareerDetails/CareerDetails";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/technologies" element={<Technology />} />
         <Route path="/hire" element={<Hire />} />
         <Route path="/career" element={<Career />} />
+        <Route path="/career/:name" element={<CareerDetails />} />
       </Routes>
     </div>
   );
