@@ -17,7 +17,7 @@ function BlogPosts() {
             <div className={style.text}>
               <h4>{prjct.name}</h4>
               <p>{prjct.text}</p>
-              <Link to="/">
+              <Link to="/blog/1">
                 View more
                 <span>
                   <CgArrowRight />

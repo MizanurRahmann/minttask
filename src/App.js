@@ -7,6 +7,7 @@ import Service from "./pages/Service/Service";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import ContactUs from "./pages/ContactUs/ContactUs";
 import Blog from "./pages/Blog/Blog";
+import BlogSingle from "./pages/BlogSingle/BlogSingle";
 import Technology from "./pages/Technology/Technology";
 import Hire from "./pages/Hire/Hire";
 import Career from "./pages/Career/Career";
@@ -22,6 +23,7 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:id" element={<BlogSingle />} />
         <Route path="/technologies" element={<Technology />} />
         <Route path="/hire" element={<Hire />} />
         <Route path="/career" element={<Career />} />
