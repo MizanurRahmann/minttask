@@ -15,7 +15,7 @@ function Projects({ projects }) {
             <div className={style.text}>
               <h4>{prjct.name}</h4>
               <p>{prjct.text}</p>
-              <Link to="/">View full project <span><CgArrowRight/></span></Link>
+              <Link to={`/portfolio/project/${prjct.id}`}>View full project <span><CgArrowRight/></span></Link>
             </div>
           </div>
         ))}

@@ -5,6 +5,7 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Service from "./pages/Service/Service";
 import Portfolio from "./pages/Portfolio/Portfolio";
+import Project from "./pages/Project/Project";
 import ContactUs from "./pages/ContactUs/ContactUs";
 import Blog from "./pages/Blog/Blog";
 import BlogSingle from "./pages/BlogSingle/BlogSingle";
@@ -21,6 +22,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/service/mobile-app-development" element={<Service />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/portfolio/project/:id" element={<Project />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:id" element={<BlogSingle />} />
