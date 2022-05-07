@@ -41,14 +41,7 @@
   //   IMAGE BLOCK
   .imageBlock {
     width: 100%;
-    height: 85vh;
-  }
-  .imageBlock1 {
-    background: url(../../../assets/Portfolio/Single/3.png) no-repeat center
-      center / cover;
-  }
-  .imageBlock2 {
-    background: url(../../../assets/Portfolio/Single/5.png) no-repeat center
-      center / cover;
+    height: fit-content;
+    img{ width: 100%; }
   }
 }

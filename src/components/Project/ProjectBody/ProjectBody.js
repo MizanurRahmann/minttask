@@ -1,7 +1,9 @@
 import style from "./ProjectBody.module.scss";
 // images
 import img2 from "../../../assets/Portfolio/Single/2.png";
+import img3 from "../../../assets/Portfolio/Single/3.png";
 import img4 from "../../../assets/Portfolio/Single/4.png";
+import img5 from "../../../assets/Portfolio/Single/5.png";
 // components
 import ProjectFeature from "../ProjectFeature/ProjectFeature";
 import ProjectTechnologies from "../ProjectTechnologies/ProjectTechnologies";
@@ -37,7 +39,9 @@ function ProjectBody() {
       </div>
 
       {/* =============================== image block =============================== */}
-      <div className={`${style.imageBlock} ${style.imageBlock1}`}></div>
+      <div className={style.imageBlock}>
+        <img src={img3} alt="" />
+      </div>
 
       {/* =============================== text block =============================== */}
       <div className={style.textBlock}>
@@ -84,7 +88,9 @@ function ProjectBody() {
       <ProjectFeature />
 
       {/* =============================== image block =============================== */}
-      <div className={`${style.imageBlock} ${style.imageBlock2}`}></div>
+      <div className={style.imageBlock}>
+        <img src={img5} alt="" />
+      </div>
 
       {/* =============================== text block =============================== */}
       <ProjectTechnologies />

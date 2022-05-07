@@ -32,7 +32,7 @@ function ProjectSlide() {
               <div className={style.text}>
                 <h4>{data.name}</h4>
                 <p>{data.text}</p>
-                <Link to="/blog/1">
+                <Link to="/portfolio/project/10">
                   View more
                   <span>
                     <CgArrowRight />
