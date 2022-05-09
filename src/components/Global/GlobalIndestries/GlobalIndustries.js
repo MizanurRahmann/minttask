@@ -18,7 +18,17 @@ const settings = {
 
 function GlobalIndustries({ data }) {
   const [option, setOption] = useState(1);
+  const [animationActive, setAnimationActive] = useState(false);
   const slider = useRef(null);
+
+  const handleClick = (id) => {
+    setAnimationActive(true);
+    setOption(id);
+
+    setTimeout(() => {
+      setAnimationActive(false);
+    }, 2000)
+  }
 
   return (
     <div className={style.industries}>
@@ -44,7 +54,7 @@ function GlobalIndustries({ data }) {
                   ? `${style.option} ${style.active}`
                   : `${style.option}`
               }
-              onClick={() => setOption(data.id)}
+              onClick={() => handleClick(data.id)}
             >
               <div className={style.optionWrapper}>
                 <div className={style.logo}>{data.optionLogo}</div>
@@ -68,7 +78,7 @@ function GlobalIndustries({ data }) {
         {/* ////////////// Detail ////////////// */}
         {/* //////////////////////////////////// */}
         <div className={style.content__detail}>
-          <div className={style.wrapper}>
+          <div className={animationActive ? `${style.wrapper} ${style.activeAnim}` : `${style.wrapper}`}>
             <Detail option={option} data={data} />
           </div>
         </div>
