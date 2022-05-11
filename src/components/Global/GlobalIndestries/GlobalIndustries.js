@@ -16,6 +16,14 @@ const settings = {
   verticalSwiping: true,
 };
 
+const settings2 = {
+  dots: false,
+  arrows: false,
+  infinite: true,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+};
+
 function GlobalIndustries({ data }) {
   const [option, setOption] = useState(1);
   const [animationActive, setAnimationActive] = useState(false);
@@ -27,8 +35,8 @@ function GlobalIndustries({ data }) {
 
     setTimeout(() => {
       setAnimationActive(false);
-    }, 2000)
-  }
+    }, 2000);
+  };
 
   return (
     <div className={style.industries}>
@@ -40,6 +48,32 @@ function GlobalIndustries({ data }) {
           mobility that help accelerate innovation, reduce costs and improve
           performance.
         </p>
+      </div>
+
+      {/* //////////////////////////////////// */}
+      {/* ///////////// Options ///////////// */}
+      {/* //////////////////////////////////// */}
+      <div className={style.optionSliderForMobile}>
+        <Slider {...settings2}>
+          {data.map((data) => (
+            <div
+              className={
+                option === data.id
+                  ? `${style.option} ${style.active}`
+                  : `${style.option}`
+              }
+              onClick={() => handleClick(data.id)}
+            >
+              <div className={style.optionWrapper}>
+                <div className={style.logo}>{data.optionLogo}</div>
+                <div className={style.text}>
+                  <div>{data.optionName[0]}</div>
+                  <div>{data.optionName[1]}</div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </Slider>
       </div>
 
       <div className={style.content}>
@@ -78,7 +112,13 @@ function GlobalIndustries({ data }) {
         {/* ////////////// Detail ////////////// */}
         {/* //////////////////////////////////// */}
         <div className={style.content__detail}>
-          <div className={animationActive ? `${style.wrapper} ${style.activeAnim}` : `${style.wrapper}`}>
+          <div
+            className={
+              animationActive
+                ? `${style.wrapper} ${style.activeAnim}`
+                : `${style.wrapper}`
+            }
+          >
             <Detail option={option} data={data} />
           </div>
         </div>

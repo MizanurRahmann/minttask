@@ -19,10 +19,12 @@ const SideDrawer = ({ show }) => {
         </div>
         <div className={Style.drawerLink}>
           <div className={Style.up}>
-          <NavLink className={(navData) => navData.isActive ? Style.activeLink : `` } to="/">Services</NavLink>
-          <NavLink className={(navData) => navData.isActive ? Style.activeLink : `` } to="/rates">Vacancies</NavLink>
-          <NavLink className={(navData) => navData.isActive ? Style.activeLink : `` } to="/rates">Our Cases</NavLink>
+          <NavLink className={(navData) => navData.isActive ? Style.activeLink : `` } to="/hire">Hire Developers</NavLink>
           <NavLink className={(navData) => navData.isActive ? Style.activeLink : `` } to="/about">About us</NavLink>
+          <NavLink className={(navData) => navData.isActive ? Style.activeLink : `` } to="/portfolio">Portfolio</NavLink>
+          <NavLink className={(navData) => navData.isActive ? Style.activeLink : `` } to="/blog">Blog</NavLink>
+          <NavLink className={(navData) => navData.isActive ? Style.activeLink : `` } to="/technologies">Technologies</NavLink>
+          <NavLink className={(navData) => navData.isActive ? Style.activeLink : `` } to="/contact">Contact</NavLink>
           </div>
         </div>
       </nav>

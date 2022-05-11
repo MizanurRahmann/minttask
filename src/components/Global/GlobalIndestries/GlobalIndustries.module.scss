@@ -1,12 +1,20 @@
+@import "../../../styles/breakpoints.scss";
+
 .industries {
   width: 100%;
   min-height: fit-content;
   background: #0b2845;
+  overflow: hidden;
 }
 .industries__text {
   padding-top: 60px;
   padding-left: 100px;
   padding-right: 10px;
+  @include media("<=phone") {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 60px;
+  }
 }
 .industries .industries__text h1 {
   text-align: center;
@@ -15,6 +23,11 @@
   font-size: 36px;
   font-weight: 600;
   letter-spacing: -0.34px;
+  @include media("<=phone") {
+    font-size: 26px;
+    line-height: 36px;
+    letter-spacing: -1px;
+  }
 }
 .industries .industries__text p {
   width: 50%;
@@ -25,53 +38,79 @@
   font-size: 15px;
   line-height: 21px;
   font-family: var(--font-secondary);
+  @include media("<=phone") {
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 24px;
+  }
 }
 .industries .industries__text p:nth-child(1) {
   color: #fff;
+  margin-bottom: 12px;
 }
 
 .industries .content {
   display: flex;
   padding: 3rem 100px 60px 100px;
   position: relative;
+  @include media("<=phone") {
+    padding: 0;
+  }
 }
 .content .content__options {
   width: 25%;
   height: 47vh;
   padding-right: 4rem;
+  @include media("<=phone") {
+    display: none;
+  }
 }
-
-.content .content__options .option {
+.optionSliderForMobile{
+  padding-bottom: 10px;
+  width: 150%;
+  @include media(">=phone") {
+    display: none;
+  }
+  @include media("<=phone") {
+    display: block;
+  }
+}
+.option {
   padding: 0.8rem;
   height: 9vh;
   width: 100%;
+  @include media("<=phone") {
+    height: fit-content;
+  }
 }
-.content .content__options .option .optionWrapper {
+.option .optionWrapper {
   padding: 12px 14px;
   border: 2px solid rgba(94, 91, 91, 0.6);
   border-radius: 6px;
   cursor: pointer;
   transition: 0.3s;
 }
-.content .content__options .option .optionWrapper:hover {
+.option .optionWrapper:hover {
   background: rgba(28, 55, 82, 0.4);
 }
 
-.content .content__options .option.active .optionWrapper {
+.option.active .optionWrapper {
   border: 1px solid var(--primary-color);
 }
-.content .content__options .option .optionWrapper {
+.option .optionWrapper {
   display: flex;
 }
-.content .content__options .option .optionWrapper .logo,
-.content .content__options .option .optionWrapper .text {
+.option .optionWrapper .logo,
+.option .optionWrapper .text {
   color: #e5e5e5;
   font-size: 18px;
   line-height: 21px;
   font-weight: 500;
   font-family: var(--font-secondary);
 }
-.content .content__options .option .optionWrapper .logo {
+.option .optionWrapper .logo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,12 +125,19 @@
   color: var(--primary-color);
   font-size: 1.2rem;
   cursor: pointer;
+  @include media("<=phone") {
+    display: none;
+  }
 }
 // ////////////////////////////////////////////////////////////////
 // ////////////////////////////////////////////////////////////////
 .content .content__detail {
   width: 75%;
   padding-left: 50px;
+  @include media("<=phone") {
+    width: 100%;
+    padding-left: 0;
+  }
 }
 .content .content__detail .wrapper {
   width: 100%;
@@ -99,13 +145,20 @@
   border-radius: 8px;
   background: #243d57;
   padding: 2rem;
+  @include media("<=phone") {
+    padding: 20px;
+  }
 }
-.content .content__detail .wrapper.activeAnim{
+.content .content__detail .wrapper.activeAnim {
   animation: fadeIn 2s;
 }
 @keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .content .content__detail .wrapper .heading {
   display: flex;
@@ -119,6 +172,12 @@
   font-size: 22px;
   line-height: 28px;
   color: #fcfcfc;
+  @include media("<=phone") {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: -0.00272em;
+  }
 }
 .content .content__detail .wrapper .heading span {
   color: #175fff;
@@ -132,6 +191,12 @@
 }
 .content .content__detail .wrapper .elements .image img {
   width: 100%;
+  @include media("<=phone") {
+    width: 110px;
+    height: 247px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
 }
 .content .content__detail .wrapper .elements .text {
   width: 70%;
@@ -142,27 +207,63 @@
   font-family: var(--font-secondary);
   color: #ccc;
 }
-.elements .text h4 {
+h4 {
   margin-top: 35px;
-  color: #ccc;
+  color: #ccc !important;
   font-family: var(--font-secondary);
   font-size: 18px;
   line-height: 21px;
 }
-.elements .text ul {
+.text h4 {
+  @include media("<=phone") {
+    display: none;
+  }
+}
+ul.listInMobile {
+  @include media(">=phone") {
+    display: none;
+  }
+  @include media("<=phone") {
+    display: block;
+  }
+}
+ul.listInDesktop {
+  @include media("<=phone") {
+    display: none;
+  }
+  @include media(">=phone") {
+    display: block;
+  }
+}
+
+ul {
   margin-top: 1rem;
   list-style: none;
 }
-.elements .text ul li {
-  color: #b2b2b2;
-  font-size: 14px;
-  line-height: 20px;
+ul li {
+  color: #b2b2b2 !important;
   margin-bottom: 14px;
   display: flex;
   font-weight: 500;
   font-family: var(--font-primary);
+  @include media("<=phone") {
+    margin-bottom: 5px;
+  }
 }
-.elements .text ul li div:nth-child(1) {
+ul li div:nth-child(1) {
   margin-right: 1rem;
   color: var(--primary-color);
+  font-size: 1.5rem;
+  @include media("<=phone") {
+    font-size: 1.5rem;
+  }
+}
+ul li div:nth-child(2) {
+  font-size: 14px;
+  line-height: 20px;
+  @include media("<=phone") {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+  }
 }

@@ -10,15 +10,15 @@ function Detail({ option, data }) {
         <h3>{data[option - 1].head}</h3>
         <span>{data[option - 1].optionLogo}</span>
       </div>
-      
+
       <div className={style.elements}>
         <div className={style.image}>
           <img src={data[option - 1].image} alt="" />
         </div>
         <div className={style.text}>
           <p>{data[option - 1].text}</p>
-          <h4>Our Services</h4>
-          <ul>
+          <h4>Our Expertise</h4>
+          <ul className={style.listInDesktop}>
             {data[option - 1].services.map((d) => (
               <li key={d.id}>
                 <div>
@@ -30,6 +30,20 @@ function Detail({ option, data }) {
           </ul>
         </div>
       </div>
+
+      <>
+        <h4>Our Expertise</h4>
+        <ul className={style.listInMobile}>
+          {data[option - 1].services.map((d) => (
+            <li key={d.id}>
+              <div>
+                <AiOutlineCheck />
+              </div>
+              <div>{d.name}</div>
+            </li>
+          ))}
+        </ul>
+      </>
     </>
   );
 }

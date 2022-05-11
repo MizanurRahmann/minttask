@@ -1,8 +1,13 @@
+@import "../../../styles/breakpoints.scss";
+
 .achievements {
   width: 100%;
   min-height: fit-content;
   background: #0b2845;
   display: flex;
+  @include media("<=phone") {
+    flex-wrap: wrap;
+  }
 
   &__head {
     width: 52%;
@@ -10,6 +15,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include media("<=phone") {
+      width: 100%;
+      padding: 63px 15px 32px 15px;
+      flex-wrap: wrap;
+    }
     .logo {
       color: var(--primary-color);
       font-size: 2rem;
@@ -31,6 +41,9 @@
       font-weight: 600;
       color: var(--white-color);
       margin: 12px 0;
+      @include media("<=phone") {
+        margin-bottom: 12px;
+      }
     }
   }
 
@@ -39,11 +52,24 @@
     padding: 70px 100px;
     display: flex;
     justify-content: space-between;
+    @include media("<=phone") {
+      width: 100%;
+      flex-wrap: wrap;
+      padding: 15px;
+    }
     .block1 {
       width: 47%;
+      @include media("<=phone") {
+        width: 100%;
+        flex-wrap: wrap;
+      }
     }
     .block2 {
       width: 47%;
+      @include media("<=phone") {
+        width: 100%;
+        flex-wrap: wrap;
+      }
     }
     .achive {
       width: 100%;
@@ -51,12 +77,23 @@
       background: #243d57;
       border-radius: 6px;
       transition: 0.3s;
+      
       &:not(:last-child){
         margin-bottom: 4rem;
+        @include media("<=phone") {
+          margin-bottom: 24px;
+        }
       }
+
       &:hover{
         transform: scale(1.07);
       }
+
+      @include media("<=phone") {
+        padding: 15px;
+        margin-bottom: 24px;
+      }
+
       p {
         display: block;
         font-size: 15px;

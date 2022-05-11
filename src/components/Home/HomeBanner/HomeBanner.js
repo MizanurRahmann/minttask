@@ -23,23 +23,28 @@ function HomeBanner() {
             </div>
         </div>
         <div className={style.header__option}>
-            <div className={style.text}>
-                <p>Trusted by the fastest growing companies</p>
+            <div className={style.optionWrapper}>
+                <div className={style.text}>
+                    <p>Trusted by the fastest growing companies</p>
+                </div>
+                
+                <div className={style.logo}><img src={img1} alt="" /></div>
+                <div className={style.logo}><img src={img2} alt="" /></div>
+                <div className={style.logo}><img src={img3} alt="" /></div>
+                <div className={style.logo}><img src={img4} alt="" /></div>
+                <div className={style.logo}><img src={img5} alt="" /></div>
+                <div className={style.logo}><img src={img6} alt="" /></div>
             </div>
-            <div className={style.logo}><img src={img1} alt="" /></div>
-            <div className={style.logo}><img src={img2} alt="" /></div>
-            <div className={style.logo}><img src={img3} alt="" /></div>
-            <div className={style.logo}><img src={img4} alt="" /></div>
-            <div className={style.logo}><img src={img5} alt="" /></div>
-            <div className={style.logo}><img src={img6} alt="" /></div>
 
-            <div class={`${style.block} ${style.first}`}>
-                <RiFilePaper2Line />
-                <h4>Recieve our Brochure</h4>
-            </div>
-            <div class={`${style.block} ${style.second}`}>
-                <BsFillPlayFill />
-                <h4>Watch Free Demo</h4>
+            <div className={style.specialLinkWrapper}>
+                <div class={`${style.block} ${style.first}`}>
+                    <RiFilePaper2Line />
+                    <h4>Recieve our Brochure</h4>
+                </div>
+                <div class={`${style.block} ${style.second}`}>
+                    <BsFillPlayFill />
+                    <h4>Watch Free Demo</h4>
+                </div>
             </div>
         </div>
     </header>
