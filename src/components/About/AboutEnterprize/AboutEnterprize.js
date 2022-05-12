@@ -25,6 +25,7 @@ function AboutEnterprize() {
         </p>
       </div>
 
+      <div className={style.enterprizeContentWrappr}>
       <div className={style.enterprize__content}>
         <div className={style.element}>
           <div className={style.logo}>
@@ -73,6 +74,7 @@ function AboutEnterprize() {
             <div>& Restaurant</div>
           </div>
         </div>
+      </div>
       </div>
 
       <div className={style.globalLink}>

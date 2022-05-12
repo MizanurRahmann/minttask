@@ -1,7 +1,12 @@
+@import "../../../styles/breakpoints.scss";
+
 .serviceSolution {
   width: 100%;
   position: relative;
   overflow: hidden;
+  @include media("<=phone") {
+    display: none;
+  }
 
   .wrapper {
     width: calc(100% - 200px);

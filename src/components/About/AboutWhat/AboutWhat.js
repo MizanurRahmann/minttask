@@ -30,6 +30,11 @@ function AboutWhat() {
             <div>With Minttask, you can create</div>
             <div>live online events that are</div>
             <div>interactive and personal</div>
+            
+            <div className={style.mobileV}>
+              With Minttask, you can create live online events that are
+              interactive and personal
+            </div>
           </h2>
         </div>
         <div className={style.text}>
