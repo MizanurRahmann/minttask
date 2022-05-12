@@ -1,15 +1,26 @@
+@import "../../../styles/breakpoints.scss";
+
 .highlights {
   width: 100%;
   position: relative;
 
   &__wrapper {
     padding: 0 100px 0 100px;
+    @include media("<=phone") {
+      padding: 0;
+    }
     .content {
       padding: 2rem;
       background: #f7f8fa;
       border-radius: 10px;
+      @include media("<=phone") {
+        padding: 0;
+      }
       &__text {
         margin-bottom: 2rem;
+        @include media("<=phone") {
+          padding: 40px 15px 0 15px;
+        }
         h1 {
           text-align: center;
           margin-bottom: 1rem;
@@ -28,6 +39,9 @@
           color: rgba(0,0,0,0.7);
           &:nth-child(1){
             color: #808080;
+          }
+          @include media("<=phone") {
+            width: 100%;
           }
         }
       }

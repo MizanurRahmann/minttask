@@ -1,7 +1,12 @@
+@import "../../../styles/breakpoints.scss";
+
 .investors {
   width: 100%;
-  padding: 6rem 10rem;
+  padding: 3rem 10rem 2rem 10rem;
   position: relative;
+  @include media("<=phone") {
+    padding: 15px;
+  }
 
   h4 {
     display: block;
@@ -11,6 +16,10 @@
     font-size: 36px;
     line-height: 42px;
     margin-top: 62px;
+    color: #0B2845 !important;
+    @include media("<=phone") {
+      margin-top: 2rem;
+    }
   }
 
   .img {

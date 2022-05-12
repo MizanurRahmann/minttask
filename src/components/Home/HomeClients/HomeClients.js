@@ -22,14 +22,6 @@ function HomeClients() {
       slidesToScroll: 1
     };
 
-    const settings2 = {
-      dots: false,
-      arrows: false,
-      infinite: true,
-      slidesToShow: 2,
-      slidesToScroll: 1,
-    }
-
   return (
     <div className={style.clients}>
       <div className={style.clients__text}>
@@ -48,22 +40,22 @@ function HomeClients() {
       {/* /////////////////////////////////////// */}
       <div className={style.options}>
         <div className={style.options__wrapper}>
-        <div className={selected === 1 ? `${style.option} ${style.active}` : `${style.option}`} onClick={() => setSelected(1)}>
-          <div><AiOutlineHeart /></div>
-          <div>Large Enterprises</div>
-        </div>
-        <div className={selected === 2 ? `${style.option} ${style.active}` : `${style.option}`} onClick={() => setSelected(2)}>
-          <div><RiCheckboxMultipleLine /></div>
-          <div>Small to Medium Enterprise (SME)</div>
-        </div>
-        <div className={selected === 3 ? `${style.option} ${style.active}` : `${style.option}`} onClick={() => setSelected(3)}>
-          <div><RiCheckboxMultipleLine /></div>
-          <div>Small to Medium Enterprise (SME)</div>
-        </div>
-        <div className={selected === 4 ? `${style.option} ${style.active}` : `${style.option}`} onClick={() => setSelected(4)}>
-          <div><RiCheckboxMultipleLine /></div>
-          <div>Startups</div>
-        </div>
+          <div className={selected === 1 ? `${style.option} ${style.active}` : `${style.option}`} onClick={() => setSelected(1)}>
+            <div><AiOutlineHeart /></div>
+            <div>Large Enterprises</div>
+          </div>
+          <div className={selected === 2 ? `${style.option} ${style.active}` : `${style.option}`} onClick={() => setSelected(2)}>
+            <div><RiCheckboxMultipleLine /></div>
+            <div>Small to Medium Enterprise (SME)</div>
+          </div>
+          <div className={selected === 3 ? `${style.option} ${style.active}` : `${style.option}`} onClick={() => setSelected(3)}>
+            <div><RiCheckboxMultipleLine /></div>
+            <div>Small to Medium Enterprise (SME)</div>
+          </div>
+          <div className={selected === 4 ? `${style.option} ${style.active}` : `${style.option}`} onClick={() => setSelected(4)}>
+            <div><RiCheckboxMultipleLine /></div>
+            <div>Startups</div>
+          </div>
         </div>
       </div>
 

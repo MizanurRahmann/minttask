@@ -25,41 +25,54 @@ function PortfolioProjects() {
 
   useEffect(() => {
     filterData(1, "all");
-  }, [])
+  }, []);
 
   return (
     <div className={style.projects}>
       <div className={style.options}>
-        <div
-          className={active === 1 ? `${style.option} ${style.active}` : `${style.option}`}
-          onClick={() => filterData(1, "all")}
-        >
-          Veiw all
-        </div>
-        <div
-          className={active === 2 ? `${style.option} ${style.active}` : `${style.option}`}
-          onClick={() => filterData(2, "mobile")}
-        >
-          Mobile App Development
-        </div>
-        <div
-          className={
-            active === 3 ? `${style.option} ${style.active}` : `${style.option}`
-          }
-          onClick={() => filterData(3, "app")}
-        >
-          Web Development
-        </div>
-        <div
-          className={
-            active === 4 ? `${style.option} ${style.active}` : `${style.option}`
-          }
-          onClick={() => filterData(4, "expertise")}
-        >
-          Enterprise Devops
+        <div className={style.options__wrapper}>
+          <div
+            className={
+              active === 1
+                ? `${style.option} ${style.active}`
+                : `${style.option}`
+            }
+            onClick={() => filterData(1, "all")}
+          >
+            Veiw all
+          </div>
+          <div
+            className={
+              active === 2
+                ? `${style.option} ${style.active}`
+                : `${style.option}`
+            }
+            onClick={() => filterData(2, "mobile")}
+          >
+            Mobile App Development
+          </div>
+          <div
+            className={
+              active === 3
+                ? `${style.option} ${style.active}`
+                : `${style.option}`
+            }
+            onClick={() => filterData(3, "app")}
+          >
+            Web Development
+          </div>
+          <div
+            className={
+              active === 4
+                ? `${style.option} ${style.active}`
+                : `${style.option}`
+            }
+            onClick={() => filterData(4, "expertise")}
+          >
+            Enterprise Devops
+          </div>
         </div>
       </div>
-
 
       <Projects projects={filteredData} />
     </div>
