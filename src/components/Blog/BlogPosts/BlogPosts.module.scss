@@ -1,5 +1,10 @@
+@import "../../../styles/breakpoints.scss";
+
 .blogpost {
   padding: 100px;
+  @include media("<=phone") {
+    padding: 15px;
+  }
 }
 .allposts {
   display: flex;
@@ -9,6 +14,11 @@
     width: 30%;
     min-height: 30vh;
     margin-bottom: 3rem;
+    @include media("<=phone") {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 1.5rem;
+    }
     .image {
       width: 100%;
       img {
@@ -17,12 +27,19 @@
     }
     .text {
       padding: 1.5rem 0;
+      @include media("<=phone") {
+        padding: 10px 0;
+      }
       h4 {
         font-weight: 400;
         font-size: 15px;
         line-height: 21px;
         margin-bottom: 1rem;
         font-family: var(--font-secondary);
+        @include media("<=phone") {
+          margin: 0;
+          margin-bottom: 10px;
+        }
       }
       p {
         font-weight: 400;

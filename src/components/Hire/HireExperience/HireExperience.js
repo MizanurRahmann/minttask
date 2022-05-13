@@ -19,7 +19,7 @@ const settings = {
 
 function HireExperience() {
   return (
-    <>
+    <div className={style.hireExpWrapper}>
       <div className={style.hireexperience}>
         <div className={style.hireexperience__image}>
           <img src={img1} alt="" />
@@ -107,7 +107,7 @@ function HireExperience() {
           </div>
         </div>
       </Slider>
-    </>
+    </div>
   );
 }
 

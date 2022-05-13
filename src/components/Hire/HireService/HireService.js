@@ -14,6 +14,16 @@ function HireService() {
     infinite: true,
     slidesToShow: 5,
     speed: 500,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+    ],
   };
 
   return (
