@@ -1,15 +1,27 @@
+@import "../../../styles/breakpoints.scss";
+
 .contactform {
   padding: 54px 100px;
   position: relative;
+  @include media("<=phone") {
+    padding: 15px;
+  }
 
   &__form {
     width: 60%;
     display: flex;
     flex-direction: column;
+    @include media("<=phone") {
+      width: 100%;
+    }
     .inputGroup {
       display: flex;
       justify-content: space-between;
       margin-bottom: 16px;
+      @include media("<=phone") {
+        flex-wrap: wrap;
+        margin-bottom: 0;
+      }
       input {
         width: 49%;
         height: 40px;
@@ -21,6 +33,10 @@
         background: #fafbfc;
         border: 1px solid #dfe1e6;
         outline: none;
+        @include media("<=phone") {
+          width: 100%;
+          margin-bottom: 16px;
+        }
       }
     }
     textarea {
@@ -61,7 +77,10 @@
     position: absolute;
     top: -6rem;
     right: 0;
-    img{
+    @include media("<=phone") {
+      display: none;
+    }
+    img {
       width: 605px;
       height: 605px;
     }
