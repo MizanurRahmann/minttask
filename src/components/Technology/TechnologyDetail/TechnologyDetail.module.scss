@@ -1,12 +1,23 @@
+@import "../../../styles/breakpoints.scss";
+
 .detail {
   width: calc(100% - 12rem);
   display: flex;
   padding: 24px;
   margin: 6rem 6rem 0 6rem;
   background: #f7f8fa;
+  @include media("<=phone") {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    flex-wrap: wrap;
+  }
 
   .head {
     width: 50%;
+    @include media("<=phone") {
+      width: 100%;
+    }
     p {
       color: var(--primary-color);
       font-weight: 500;
@@ -24,6 +35,9 @@
   }
   .text {
     width: 50%;
+    @include media("<=phone") {
+      width: 100%;
+    }
     p {
       margin-bottom: 2rem;
       font-size: 15px;
@@ -54,6 +68,11 @@
   justify-content: space-between;
   margin-top: 5rem;
   padding: 0 6rem;
+  @include media("<=phone") {
+    flex-wrap: wrap;
+    margin-top: 24px;
+    padding: 15px;
+  }
   .solution {
     width: 30%;
     height: fit-content;
@@ -61,12 +80,17 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     border-radius: 6px;
     transition: 0.3s;
+    @include media("<=phone") {
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+    }
     &:hover {
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     }
     .logo {
       margin-bottom: 21px;
-      img{
+      img {
         height: 3rem;
       }
     }

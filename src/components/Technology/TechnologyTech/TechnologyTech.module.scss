@@ -1,7 +1,12 @@
+@import "../../../styles/breakpoints.scss";
+
 .tech {
   width: 100%;
   min-height: 100vh;
   padding: 150px 100px;
+  @include media("<=phone") {
+    padding: 15px;
+  }
 
   .text {
     div.logo {
@@ -39,11 +44,19 @@
     display: flex;
     justify-content: space-between;
     margin-top: 62px;
+    @include media("<=phone") {
+      margin-top: 32px;
+      flex-wrap: wrap;
+    }
     .slide {
       width: 23%;
       padding: 16px;
       border-radius: 6px;
       box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+      @include media("<=phone") {
+        width: 100%;
+        margin-bottom: 2rem;
+      }
       h3 {
         margin-top: 10px;
         font-weight: 400;

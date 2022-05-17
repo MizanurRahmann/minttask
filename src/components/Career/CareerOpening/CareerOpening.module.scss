@@ -1,6 +1,11 @@
+@import "../../../styles/breakpoints.scss";
+
 .opening {
   width: 100%;
   padding: 100px;
+  @include media("<=phone") {
+    padding: 15px;
+  }
 
   &__text {
     h1 {
@@ -20,6 +25,9 @@
       line-height: 21px;
       font-weight: 400;
       font-family: var(--font-secondary);
+      @include media("<=phone") {
+        width: 100%;
+      }
     }
   }
 
@@ -28,6 +36,9 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 80px;
+    @include media("<=phone") {
+      margin-top: 45px;
+    }
     .item {
       width: calc(33.33% - 12px);
       background: #ffffff;
@@ -37,12 +48,20 @@
       padding: 16px 20px;
       margin-bottom: 24px;
       transition: 0.3s;
+      @include media("<=phone") {
+        height: fit-content;
+        width: 100%;
+        margin-bottom: 2rem;
+      }
       &:hover {
         border: 1px solid rgba(0, 0, 0, 0.2);
       }
 
       img {
         margin-bottom: 21px;
+        @include media("<=phone") {
+          margin-bottom: -10px;
+        }
       }
       h4 {
         margin-bottom: 14px;
@@ -53,6 +72,9 @@
         line-height: 26px;
         letter-spacing: -0.00272em;
         color: rgba(0, 0, 0, 0.7);
+        @include media("<=phone") {
+          margin: 10px 0;
+        }
       }
       p {
         margin-bottom: 48px;
@@ -63,6 +85,9 @@
         line-height: 21px;
         letter-spacing: -0.0419664px;
         color: rgba(0, 0, 0, 0.7);
+        @include media("<=phone") {
+          margin-bottom: 0;
+        }
       }
       a {
         width: fit-content;

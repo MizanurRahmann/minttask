@@ -1,3 +1,5 @@
+@import "../../styles/breakpoints.scss";
+
 h4 {
   font-family: var(--fonr-secondary);
   font-style: normal;
@@ -90,8 +92,16 @@ ul {
       display: flex;
       justify-content: space-between;
       margin-bottom: 16px;
+      @include media("<=phone") {
+        margin-bottom: 0;
+        flex-wrap: wrap;
+      }
       input {
         width: calc(50% - 8px);
+        @include media("<=phone") {
+          width: 100%;
+          margin-bottom: 1rem;
+        }
       }
     }
     .fullLength {
@@ -108,9 +118,15 @@ ul {
       border: 2px solid #325ce8;
       border-radius: 4px;
       padding: 16px;
+      @include media("<=phone") {
+        flex-wrap: wrap;
+      }
       .applyBtn {
         width: 194px;
         height: 53px;
+        @include media("<=phone") {
+          margin-bottom: 1rem;
+        }
         button {
           outline: none;
           border: none;

@@ -1,8 +1,14 @@
+@import "../../../styles/breakpoints.scss";
+
 .banner {
     width: 100%;
     min-height: 80vh;
     background: var(--primary-color);
     display: flex;
+    @include media("<=phone") {
+      min-height: 60vh;
+      flex-wrap: wrap;
+    }
   
     &__left {
       width: 50%;
@@ -10,6 +16,10 @@
       align-items: center;
       color: #fff;
       padding-left: 100px;
+      @include media("<=phone") {
+        width: 100%;
+        padding-left: 15px;
+      }
       p {
         font-weight: 600;
         font-size: 26px;
@@ -38,6 +48,10 @@
     &__right {
       width: 50%;
       position: relative;
+      @include media("<=phone") {
+        width: 100%;
+        display: none;
+      }
       .frame {
         position: absolute;
         top: 50%;
