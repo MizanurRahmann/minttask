@@ -3,7 +3,14 @@
 .achievements {
   width: 100%;
   height: fit-content;
-  background: #0b2845;
+  background: linear-gradient(
+      86.21deg,
+      rgba(11, 40, 69, 0.78) 49.81%,
+      rgba(11, 40, 69, 0) 114.07%
+    ),
+    url("../../../assets/Services/back.jpg") no-repeat center center / cover;
+  // background: url("") no-repeat left top,
+  //   linear-gradient(#eb01a5, #d13531);
   display: flex;
   @include media("<=phone") {
     flex-wrap: wrap;
@@ -30,8 +37,8 @@
       line-height: 21px;
       color: #fff;
       font-family: var(--font-secondary);
-      &:first-child{
-        color: #E5E5E5;
+      &:first-child {
+        color: #e5e5e5;
       }
       &:last-child {
         color: #b2b2b2;
@@ -74,23 +81,22 @@
       padding: 1.5rem 1.5rem 2.5rem 1.5rem;
       background: #243d57;
       border-radius: 6px;
-      
-      &:not(:last-child){
+
+      &:not(:last-child) {
         margin-bottom: 4rem;
         @include media("<=phone") {
           margin-bottom: 24px;
         }
       }
 
-      &:hover{
+      &:hover {
         transform: scale(1.07);
       }
-      
+
       @include media("<=phone") {
         padding: 15px;
         margin-bottom: 24px;
       }
-
 
       p {
         display: block;

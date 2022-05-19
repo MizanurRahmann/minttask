@@ -32,7 +32,7 @@ function Detail({ option, data }) {
       </div>
 
       <>
-        <h4>Our Expertise</h4>
+        <h4 className={style.headInMobile}>Our Expertise</h4>
         <ul className={style.listInMobile}>
           {data[option - 1].services.map((d) => (
             <li key={d.id}>

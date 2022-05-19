@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 // Styles
 import styles from "./Navbar.module.scss";
-import logoImage from "../../assets/Group.png";
-import logoImage2 from "../../assets/Footer/Group.png";
+import logoImage from "../../assets/Group.svg";
+import logoImage2 from "../../assets/Footer/Group.svg";
 import { BsChevronDown, BsCodeSquare, BsCart, BsHexagon } from "react-icons/bs";
 import { AiOutlineMobile } from "react-icons/ai";
 import { FiMonitor } from "react-icons/fi";

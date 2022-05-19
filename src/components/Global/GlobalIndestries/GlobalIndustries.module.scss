@@ -3,7 +3,7 @@
 .industries {
   width: 100%;
   min-height: fit-content;
-  background: #0b2845;
+  background: linear-gradient(110.29deg, #fde7fd 8.4%, #eaf5ff 93.46%);
   overflow: hidden;
 }
 .industries__text {
@@ -18,7 +18,7 @@
 }
 .industries .industries__text h1 {
   text-align: center;
-  color: #fff;
+  color: rgba(0, 0, 0, 0.8);;
   margin-bottom: 1rem;
   font-size: 36px;
   font-weight: 600;
@@ -34,7 +34,7 @@
   margin: auto;
   margin-bottom: 1rem;
   text-align: center;
-  color: #b2b2b2;
+  color: rgba(0, 0, 0, 0.7);;
   font-size: 15px;
   line-height: 21px;
   font-family: var(--font-secondary);
@@ -47,7 +47,7 @@
   }
 }
 .industries .industries__text p:nth-child(1) {
-  color: #fff;
+  color: #999999;
   margin-bottom: 12px;
 }
 
@@ -67,7 +67,7 @@
     display: none;
   }
 }
-.optionSliderForMobile{
+.optionSliderForMobile {
   padding-bottom: 10px;
   width: 150%;
   @include media(">=phone") {
@@ -87,13 +87,15 @@
 }
 .option .optionWrapper {
   padding: 12px 14px;
-  border: 2px solid rgba(94, 91, 91, 0.6);
-  border-radius: 6px;
   cursor: pointer;
   transition: 0.3s;
+  background: #ffffff;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
 }
 .option .optionWrapper:hover {
-  background: rgba(28, 55, 82, 0.4);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .option.active .optionWrapper {
@@ -104,7 +106,7 @@
 }
 .option .optionWrapper .logo,
 .option .optionWrapper .text {
-  color: #e5e5e5;
+  color: rgba(0, 0, 0, 0.7);;
   font-size: 18px;
   line-height: 21px;
   font-weight: 500;
@@ -143,7 +145,7 @@
   width: 100%;
   min-height: 50vh;
   border-radius: 8px;
-  background: #243d57;
+  background: #fff;
   padding: 2rem;
   @include media("<=phone") {
     padding: 20px;
@@ -171,7 +173,7 @@
   font-family: var(--font-secondary);
   font-size: 22px;
   line-height: 28px;
-  color: #fcfcfc;
+  color: #052F61;
   @include media("<=phone") {
     font-weight: 500;
     font-size: 22px;
@@ -205,17 +207,22 @@
 .elements .text p {
   font-size: 15px;
   font-family: var(--font-secondary);
-  color: #ccc;
+  color: rgba(0, 0, 0, 0.6);
 }
 h4 {
   margin-top: 35px;
-  color: #ccc !important;
+  color: #052F61 !important;
   font-family: var(--font-secondary);
   font-size: 18px;
   line-height: 21px;
 }
 .text h4 {
   @include media("<=phone") {
+    display: none;
+  }
+}
+h4.headInMobile{
+  @include media(">=phone") {
     display: none;
   }
 }
@@ -241,7 +248,7 @@ ul {
   list-style: none;
 }
 ul li {
-  color: #b2b2b2 !important;
+  color: rgba(0, 0, 0, 0.7) !important;
   margin-bottom: 14px;
   display: flex;
   font-weight: 500;
