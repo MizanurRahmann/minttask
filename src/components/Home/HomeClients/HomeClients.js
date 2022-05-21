@@ -1,26 +1,36 @@
 import React, { useState } from "react";
 // Assets
 import style from "./HomeClients.module.scss";
-import {AiOutlineCheck, AiOutlineHeart} from "react-icons/ai";
-import { RiCheckboxMultipleLine } from "react-icons/ri"
+import { AiOutlineCheck, AiOutlineHeart } from "react-icons/ai";
+import { RiCheckboxMultipleLine } from "react-icons/ri";
 // Components
 import ClientsLogo from "./ClientsLogo";
 import { Data } from "./Data";
 import Slider from "react-slick/lib/slider";
 
 function HomeClients() {
-    const [selected, setSelected] = useState(1)
+  const [selected, setSelected] = useState(1);
+  const [animationActive, setAnimationActive] = useState(false);
 
-    const settings = {
-      dots: false,
-      arrows: false,
-      infinite: true,
-      autoplay: true,
-      autoplaySpeed: 3500,
-      speed: 1500,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    };
+  const handleClick = (id) => {
+    setAnimationActive(true);
+    setSelected(id);
+
+    setTimeout(() => {
+      setAnimationActive(false);
+    }, 1500);
+  };
+
+  const settings = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3500,
+    speed: 1500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
 
   return (
     <div className={style.clients}>
@@ -40,34 +50,73 @@ function HomeClients() {
       {/* /////////////////////////////////////// */}
       <div className={style.options}>
         <div className={style.options__wrapper}>
-          <div className={selected === 1 ? `${style.option} ${style.active}` : `${style.option}`} onClick={() => setSelected(1)}>
-            <div><AiOutlineHeart /></div>
+          <div
+            className={
+              selected === 1
+                ? `${style.option} ${style.active}`
+                : `${style.option}`
+            }
+            onClick={() => handleClick(1)}
+          >
+            <div>
+              <AiOutlineHeart />
+            </div>
             <div>Large Enterprises</div>
           </div>
-          <div className={selected === 2 ? `${style.option} ${style.active}` : `${style.option}`} onClick={() => setSelected(2)}>
-            <div><RiCheckboxMultipleLine /></div>
+          <div
+            className={
+              selected === 2
+                ? `${style.option} ${style.active}`
+                : `${style.option}`
+            }
+            onClick={() => handleClick(2)}
+          >
+            <div>
+              <RiCheckboxMultipleLine />
+            </div>
             <div>Small to Medium Enterprise (SME)</div>
           </div>
-          <div className={selected === 3 ? `${style.option} ${style.active}` : `${style.option}`} onClick={() => setSelected(3)}>
-            <div><RiCheckboxMultipleLine /></div>
+          <div
+            className={
+              selected === 3
+                ? `${style.option} ${style.active}`
+                : `${style.option}`
+            }
+            onClick={() => handleClick(3)}
+          >
+            <div>
+              <RiCheckboxMultipleLine />
+            </div>
             <div>Small to Medium Enterprise (SME)</div>
           </div>
-          <div className={selected === 4 ? `${style.option} ${style.active}` : `${style.option}`} onClick={() => setSelected(4)}>
-            <div><RiCheckboxMultipleLine /></div>
+          <div
+            className={
+              selected === 4
+                ? `${style.option} ${style.active}`
+                : `${style.option}`
+            }
+            onClick={() => handleClick(4)}
+          >
+            <div>
+              <RiCheckboxMultipleLine />
+            </div>
             <div>Startups</div>
           </div>
         </div>
       </div>
 
-      
       {/* /////////////////////////////////////// */}
       {/* Enterprizes */}
       {/* /////////////////////////////////////// */}
-      <div className={style.enterprize}>
+      <div className={
+        animationActive
+        ? `${style.enterprize} ${style.activeAnim}`
+        : `${style.enterprize}`
+      }>
         <div className={style.image}>
           {/* <img src={Data[selected - 1].image} alt="" /> */}
           <Slider {...settings} className={style.slider}>
-            {Data[selected - 1].imageSlide.map(image => (
+            {Data[selected - 1].imageSlide.map((image) => (
               <div className={style.slider__container}>
                 <img src={image} alt="" />
               </div>
@@ -81,28 +130,38 @@ function HomeClients() {
               <h4>Make Difference with Codiant</h4>
               <ul>
                 <li>
-                  <div><AiOutlineCheck /></div>
+                  <div>
+                    <AiOutlineCheck />
+                  </div>
                   <div>Strategic Consulting</div>
                 </li>
                 <li>
-                  <div><AiOutlineCheck /></div>
+                  <div>
+                    <AiOutlineCheck />
+                  </div>
                   <div>
                     Intellectual property-based mobile technology solutions
                   </div>
                 </li>
                 <li>
-                  <div><AiOutlineCheck /></div>
+                  <div>
+                    <AiOutlineCheck />
+                  </div>
                   <div>Industry-focused mobility solutions</div>
                 </li>
                 <li>
-                  <div><AiOutlineCheck /></div>
+                  <div>
+                    <AiOutlineCheck />
+                  </div>
                   <div>
                     Custom apps connected to SAP, Salesforce, CRM and other
                     ERP’s
                   </div>
                 </li>
                 <li>
-                  <div><AiOutlineCheck /></div>
+                  <div>
+                    <AiOutlineCheck />
+                  </div>
                   <div>Mobile test service</div>
                 </li>
               </ul>
@@ -111,32 +170,44 @@ function HomeClients() {
               <h4>Make Difference with Codiant</h4>
               <ul>
                 <li>
-                  <div><AiOutlineCheck /></div>
+                  <div>
+                    <AiOutlineCheck />
+                  </div>
                   <div>Strategic Consulting</div>
                 </li>
                 <li>
-                  <div><AiOutlineCheck /></div>
+                  <div>
+                    <AiOutlineCheck />
+                  </div>
                   <div>
                     Intellectual property-based mobile technology solutions
                   </div>
                 </li>
                 <li>
-                  <div><AiOutlineCheck /></div>
+                  <div>
+                    <AiOutlineCheck />
+                  </div>
                   <div>Industry-focused mobility solutions</div>
                 </li>
                 <li>
-                  <div><AiOutlineCheck /></div>
+                  <div>
+                    <AiOutlineCheck />
+                  </div>
                   <div>Enterprise platforms</div>
                 </li>
                 <li>
-                  <div><AiOutlineCheck /></div>
+                  <div>
+                    <AiOutlineCheck />
+                  </div>
                   <div>
                     Custom apps connected to SAP, Salesforce, CRM and other
                     ERP’s
                   </div>
                 </li>
                 <li>
-                  <div><AiOutlineCheck /></div>
+                  <div>
+                    <AiOutlineCheck />
+                  </div>
                   <div>Mobile test service</div>
                 </li>
               </ul>
@@ -144,7 +215,7 @@ function HomeClients() {
           </div>
         </div>
       </div>
-      
+
       <ClientsLogo />
     </div>
   );

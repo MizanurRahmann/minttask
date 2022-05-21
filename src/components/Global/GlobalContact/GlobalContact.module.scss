@@ -70,8 +70,6 @@
         width: 162px;
         outline: none;
         border: none;
-        border: 2px solid #325CE8;
-        background: #e7f1fe;
         margin-top: 24px;
         font-family: var(--font-secondary);
         font-weight: 500;
@@ -79,12 +77,20 @@
         line-height: 21px;
         text-align: center;
         letter-spacing: -0.01em;
-        color: #325ce8;
         cursor: pointer;
         border-radius: 4px;
         display: flex;
         align-items: center;
         justify-content: center;
+        background-color: #e7f1fe;
+        color: #175fff;
+        border: 2px solid #175fff;
+        transition: 0.3s;
+        &:hover {
+          background-color: #e7f1fe;
+          border: 2px solid #99b9ff;
+          color: #153ab7;
+        }
       }
     }
   }
@@ -92,9 +98,9 @@
     width: 45%;
     background: url(../../../assets/Global/Contact/back.png) no-repeat center
       center / cover;
-      @include media("<=phone") {
-        width: 100%;
-        height: 20vh;
-      }
+    @include media("<=phone") {
+      width: 100%;
+      height: 20vh;
+    }
   }
 }

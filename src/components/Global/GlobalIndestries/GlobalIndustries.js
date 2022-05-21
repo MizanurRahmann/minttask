@@ -80,26 +80,28 @@ function GlobalIndustries({ data }) {
         {/* //////////////////////////////////// */}
         {/* ///////////// Options ///////////// */}
         {/* //////////////////////////////////// */}
-        <Slider {...settings} className={style.content__options} ref={slider}>
-          {data.map((data) => (
-            <div
-              className={
-                option === data.id
-                  ? `${style.option} ${style.active}`
-                  : `${style.option}`
-              }
-              onClick={() => handleClick(data.id)}
-            >
-              <div className={style.optionWrapper}>
-                <div className={style.logo}>{data.optionLogo}</div>
-                <div className={style.text}>
-                  <div>{data.optionName[0]}</div>
-                  <div>{data.optionName[1]}</div>
+        <div className={style.optionWrapper2}>
+          <Slider {...settings} className={style.content__options} ref={slider}>
+            {data.map((data) => (
+              <div
+                className={
+                  option === data.id
+                    ? `${style.option} ${style.active}`
+                    : `${style.option}`
+                }
+                onClick={() => handleClick(data.id)}
+              >
+                <div className={style.optionWrapper}>
+                  <div className={style.logo}>{data.optionLogo}</div>
+                  <div className={style.text}>
+                    <div>{data.optionName[0]}</div>
+                    <div>{data.optionName[1]}</div>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </Slider>
+            ))}
+          </Slider>
+        </div>
 
         <div
           className={style.arrowButton}
