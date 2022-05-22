@@ -27,7 +27,7 @@
       line-height: 36px;
       font-family: var(--font-primary);
       margin-bottom: 1rem;
-      color: #E5E5E5;
+      color: #e5e5e5;
     }
     h1 {
       font-weight: 700;
@@ -38,8 +38,6 @@
     }
     a {
       text-decoration: none;
-      color: var(--primary-color);
-      background: var(--primary-color-light);
       margin-top: 2rem;
       width: 199px;
       height: 66px;
@@ -51,34 +49,43 @@
       font-family: var(--font-secondary);
       font-weight: 600;
       border-radius: 4px;
+      background-color: #e7f1fe;
+      color: #175fff;
+      border: 2px solid #175fff;
+      transition: 0.3s;
+      &:hover {
+        background-color: #e7f1fe;
+        border: 2px solid #99b9ff;
+        color: #153ab7;
+      }
     }
   }
 
-  &__right{
+  &__right {
     width: 50%;
     position: relative;
     @include media("<=phone") {
       width: 100%;
       display: none;
     }
-    .frame{
+    .frame {
       position: absolute;
       top: 50%;
       left: 12rem;
       transform: translateY(-50%);
     }
-    .iphone1{
+    .iphone1 {
       position: absolute;
       bottom: 0;
       right: 2rem;
       width: 55%;
     }
-    .iphone2{
+    .iphone2 {
       position: absolute;
       bottom: 0;
       left: 0;
     }
-    .iphone3{
+    .iphone3 {
       position: absolute;
       top: 2rem;
       right: 0;
