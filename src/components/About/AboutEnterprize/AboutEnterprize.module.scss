@@ -105,13 +105,17 @@
       align-items: center;
       justify-content: center;
       text-decoration: none;
-      background: var(--primary-color);
-      color: var(--white-color);
       font-weight: 600;
       font-size: 18px;
       font-family: var(--font-secondary);
       line-height: 21px;
       margin: auto;
+      background-color: #175fff;
+      color: #fff;
+      transition: 0.3s;
+      &:hover {
+        background-color: #99b9ff;
+      }
     }
   }
 }
