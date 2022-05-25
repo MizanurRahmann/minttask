@@ -76,11 +76,17 @@
         margin-top: 34px;
         display: flex;
         span {
-          font-size: 1.5rem;
+          font-size: 1.3rem;
           margin-left: 10px;
+          font-weight: bold;
+          transition: all 0.3s;
+        }
+        &:hover span {
+          transform: translateX(7px);
         }
       }
-      h3.mobileView, p.mobileView {
+      h3.mobileView,
+      p.mobileView {
         @include media("<=phone") {
           display: block;
         }
@@ -88,7 +94,8 @@
           display: none;
         }
       }
-      h3.desktopView, p.desktopView {
+      h3.desktopView,
+      p.desktopView {
         @include media("<=phone") {
           display: none;
         }
