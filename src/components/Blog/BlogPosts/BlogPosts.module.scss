@@ -56,9 +56,17 @@
         font-size: 14px;
         line-height: 20px;
         display: flex;
+        align-items: center;
         span {
-          font-size: 1.5rem;
+          font-size: 1.3rem;
+          margin-top: 5px;
           margin-left: 10px;
+          font-weight: bold;
+          transition: all 0.3s;
+        }
+        &:hover span {
+          color: var(--primary-color);
+          transform: translateX(7px);
         }
       }
     }

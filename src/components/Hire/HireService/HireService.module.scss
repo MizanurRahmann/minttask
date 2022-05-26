@@ -90,6 +90,7 @@
           img {
             width: 3rem;
             margin-bottom: 24px;
+            transition: 0.3s;
             @include media("<=phone") {
               width: 4rem;
               margin-bottom: 20px;
